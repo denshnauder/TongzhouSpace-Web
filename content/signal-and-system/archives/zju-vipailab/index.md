@@ -1,5 +1,5 @@
 ---
-title: zju-vipailab
+title: Zju Vipailab
 ---
 
 ## 📂 自动归档文件列表

@@ -1,5 +1,5 @@
 ---
-title: ppt
+title: Ppt
 ---
 
 ## 📂 自动归档文件列表
