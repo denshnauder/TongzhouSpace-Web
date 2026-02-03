@@ -79,5 +79,6 @@ export const defaultListPageLayout: PageLayout = {
   Component.DesktopOnly(Component.TableOfContents()),
   Component.DesktopOnly(Component.Wisdom()), // 放在这里
   Component.Backlinks(),
+  Component.FileUploader(),
 ],
 }
