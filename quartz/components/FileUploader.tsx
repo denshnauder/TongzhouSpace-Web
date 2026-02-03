@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks'
+import { useState, useEffect } from 'preact/hooks'
 import { QuartzComponent } from './types'
 
 interface FileWithContent {
@@ -6,13 +6,73 @@ interface FileWithContent {
   content: string;
 }
 
-const FileUploader: QuartzComponent = () => {
+const FileUploader: QuartzComponent = ({ fileData }: any) => {
+  // Only render on home page (index)
+  if (fileData.slug !== 'index') {
+    return null;
+  }
   const [selectedPath, setSelectedPath] = useState<string>('大二上/汽车理论');
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [uploadStatus, setUploadStatus] = useState<{
     status: 'idle' | 'uploading' | 'success' | 'error';
     message: string;
   }>({ status: 'idle', message: '' });
+  const [folders, setFolders] = useState<string[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [showSuggestions, setShowSuggestions] = useState<boolean>(false);
+  const [filteredFolders, setFilteredFolders] = useState<string[]>([]);
+  const [inputValue, setInputValue] = useState<string>('大二上/汽车理论');
+
+  // Fetch folder list on component mount
+  useEffect(() => {
+    const fetchFolders = async () => {
+      try {
+        const response = await fetch('/api/tree');
+        if (response.ok) {
+          const data = await response.json();
+          setFolders(data);
+        } else {
+          console.error('Failed to fetch folders:', response.status);
+        }
+      } catch (error) {
+        console.error('Error fetching folders:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchFolders();
+  }, []);
+
+  // Handle input change and filter folders
+  const handleInputChange = (e: Event) => {
+    const value = (e.target as HTMLInputElement).value;
+    setInputValue(value);
+    setSelectedPath(value);
+
+    if (value) {
+      // Filter folders based on input value
+      const filtered = folders.filter(folder => 
+        folder.toLowerCase().includes(value.toLowerCase())
+      );
+      setFilteredFolders(filtered);
+      setShowSuggestions(true);
+    } else {
+      setShowSuggestions(false);
+    }
+  };
+
+  // Handle folder selection from suggestions
+  const handleFolderSelect = (folder: string) => {
+    setInputValue(folder);
+    setSelectedPath(folder);
+    setShowSuggestions(false);
+  };
+
+  // Check if path exists
+  const pathExists = (path: string) => {
+    return folders.includes(path);
+  };
 
   // File size limit (20MB)
   const MAX_FILE_SIZE = 20 * 1024 * 1024;
@@ -59,6 +119,14 @@ const FileUploader: QuartzComponent = () => {
       return;
     }
 
+    if (!selectedPath) {
+      setUploadStatus({
+        status: 'error',
+        message: '请选择目标文件夹'
+      });
+      return;
+    }
+
     setUploadStatus({ status: 'uploading', message: '上传中...' });
 
     try {
@@ -83,6 +151,10 @@ const FileUploader: QuartzComponent = () => {
         })
       });
 
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
       const result = await response.json();
 
       if (result.success) {
@@ -92,6 +164,8 @@ const FileUploader: QuartzComponent = () => {
         });
         // Reset form
         setSelectedFile(null);
+        setInputValue('');
+        setSelectedPath('');
         // Clear file input
         const fileInput = document.getElementById('file-input') as HTMLInputElement;
         if (fileInput) {
@@ -123,20 +197,86 @@ const FileUploader: QuartzComponent = () => {
       {/* Path selection */}
       <div style={{ marginBottom: '15px' }}>
         <label style={{ display: 'block', marginBottom: '5px' }}>目标文件夹:</label>
-        <select
-          value={selectedPath}
-          onChange={(e) => setSelectedPath((e.target as HTMLSelectElement).value)}
-          style={{
-            width: '100%',
-            padding: '8px',
-            borderRadius: '4px',
-            border: '1px solid #ddd'
-          }}
-        >
-          <option value="大二上/汽车理论">大二上/汽车理论</option>
-          <option value="大二上/材料力学">大二上/材料力学</option>
-          <option value="公共课/毛概">公共课/毛概</option>
-        </select>
+        <div style={{ position: 'relative' }}>
+          <input
+            type="text"
+            value={inputValue}
+            onChange={handleInputChange}
+            onBlur={() => setTimeout(() => setShowSuggestions(false), 200)}
+            onFocus={() => {
+              if (inputValue) {
+                const filtered = folders.filter(folder => 
+                  folder.toLowerCase().includes(inputValue.toLowerCase())
+                );
+                setFilteredFolders(filtered);
+                setShowSuggestions(true);
+              }
+            }}
+            style={{
+              width: '100%',
+              padding: '8px',
+              borderRadius: '4px',
+              border: '1px solid #ddd',
+              boxSizing: 'border-box'
+            }}
+            placeholder="例如：大二上/汽车理论"
+          />
+          
+          {/* Suggestions dropdown */}
+          {showSuggestions && filteredFolders.length > 0 && (
+            <div style={{
+              position: 'absolute',
+              top: '100%',
+              left: 0,
+              right: 0,
+              backgroundColor: 'white',
+              border: '1px solid #ddd',
+              borderRadius: '0 0 4px 4px',
+              maxHeight: '200px',
+              overflowY: 'auto',
+              zIndex: 1000,
+              boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+            }}>
+              {filteredFolders.map((folder, index) => (
+                <div
+                  key={index}
+                  onClick={() => handleFolderSelect(folder)}
+                  style={{
+                    padding: '8px 12px',
+                    cursor: 'pointer',
+                    fontSize: '14px'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#f0f0f0';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = 'white';
+                  }}
+                >
+                  {folder}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+        
+        {/* Path existence status */}
+        {inputValue && (
+          <div style={{ marginTop: '5px', fontSize: '12px' }}>
+            {pathExists(inputValue) ? (
+              <span style={{ color: '#28a745' }}>✓ 路径存在</span>
+            ) : (
+              <span style={{ color: '#ffc107' }}>⚠️ 将创建新文件夹</span>
+            )}
+          </div>
+        )}
+        
+        {/* Loading status */}
+        {isLoading && (
+          <div style={{ marginTop: '5px', fontSize: '12px', color: '#6c757d' }}>
+            加载目录结构中...
+          </div>
+        )}
       </div>
 
       {/* File input */}
