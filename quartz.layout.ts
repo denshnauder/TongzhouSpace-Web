@@ -51,6 +51,38 @@ export const defaultContentPageLayout: PageLayout = {
 ],
 }
 
+// components for home page
+export const indexPageLayout: PageLayout = {
+  beforeBody: [
+    Component.ArticleTitle(),
+    Component.ContentMeta(),
+    Component.TagList(),
+  ],
+  left: [
+    Component.PageTitle(),
+    Component.MobileOnly(Component.Spacer()),
+    Component.Flex({
+      components: [
+        {
+          Component: Component.Search(),
+          grow: true,
+        },
+        { Component: Component.Darkmode() },
+        { Component: Component.ReaderMode() },
+      ],
+    }),
+    Component.Explorer({
+  title: "导航",
+  useSavedState: true,
+}),
+  ],
+  right: [
+    Component.DesktopOnly(Component.Wisdom()),
+    Component.FileUploader(),
+    Component.Backlinks(),
+  ],
+}
+
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [
@@ -79,6 +111,5 @@ export const defaultListPageLayout: PageLayout = {
   Component.DesktopOnly(Component.TableOfContents()),
   Component.DesktopOnly(Component.Wisdom()), // 放在这里
   Component.Backlinks(),
-  Component.FileUploader(),
 ],
 }

@@ -6,11 +6,7 @@ interface FileWithContent {
   content: string;
 }
 
-const FileUploader: QuartzComponent = ({ fileData }: any) => {
-  // Only render on home page (index)
-  if (fileData.slug !== 'index') {
-    return null;
-  }
+const FileUploader: QuartzComponent = () => {
   const [selectedPath, setSelectedPath] = useState<string>('大二上/汽车理论');
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [uploadStatus, setUploadStatus] = useState<{
