@@ -1,6 +1,7 @@
 """
 【工具名称】：md_to_folder.py (Markdown 文件转文件夹模式工具)
-【使用方法】：直接运行 python md_to_folder.py
+【使用方法】：
+    python md_to_folder.py [--content-dir CONTENT_DIR] [--verbose]
 【功能说明】：
     - 扫描 content 目录下所有落单的 .md 文件。
     - 为每个文件创建同名文件夹，并将文件重命名为 index.md 移入其中。
@@ -11,26 +12,74 @@
 
 import os
 import shutil
+import argparse
+import logging
 
-CONTENT_DIR = "content"
+def parse_args():
+    parser = argparse.ArgumentParser(description='Markdown 文件转文件夹模式工具')
+    parser.add_argument('--content-dir', default='content', help='内容目录路径')
+    parser.add_argument('--verbose', action='store_true', help='启用详细日志')
+    return parser.parse_args()
 
-def convert_md_to_folder_notes():
-    for item in os.listdir(CONTENT_DIR):
-        item_path = os.path.join(CONTENT_DIR, item)
+def convert_md_to_folder_notes(content_dir, verbose):
+    if verbose:
+        logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
+    
+    converted_count = 0
+    skipped_count = 0
+    
+    try:
+        for item in os.listdir(content_dir):
+            item_path = os.path.join(content_dir, item)
+            
+            # 只要是 .md 文件，且不是 index.md 和 README.md
+            if os.path.isfile(item_path) and item.endswith(".md") and item not in ["index.md", "README.md"]:
+                file_name = item[:-3]  # 去掉 .md
+                new_folder_path = os.path.join(content_dir, file_name)
+                
+                # 检查文件夹是否已存在
+                if os.path.exists(new_folder_path):
+                    if verbose:
+                        logging.warning(f"⚠️  跳过: 文件夹已存在 - {new_folder_path}")
+                    else:
+                        print(f"⚠️  跳过: 文件夹已存在 - {new_folder_path}")
+                    skipped_count += 1
+                    continue
+                
+                try:
+                    # 1. 创建文件夹
+                    os.makedirs(new_folder_path, exist_ok=True)
+                    
+                    # 2. 移动并重命名为 index.md
+                    target_path = os.path.join(new_folder_path, "index.md")
+                    shutil.move(item_path, target_path)
+                    
+                    if verbose:
+                        logging.info(f"✅ 已转换: {item} -> {file_name}/index.md")
+                    else:
+                        print(f"✅ 已转换: {item} -> {file_name}/index.md")
+                    converted_count += 1
+                    
+                except Exception as e:
+                    if verbose:
+                        logging.error(f"❌ 转换失败: {item}, 错误: {e}")
+                    else:
+                        print(f"❌ 转换失败: {item}, 错误: {e}")
+                    skipped_count += 1
         
-        # 只要是 .md 文件，且不是 index.md 和 README.md
-        if os.path.isfile(item_path) and item.endswith(".md") and item not in ["index.md", "README.md"]:
-            file_name = item[:-3] # 去掉 .md
-            new_folder_path = os.path.join(CONTENT_DIR, file_name)
-            
-            # 1. 创建文件夹
-            os.makedirs(new_folder_path, exist_ok=True)
-            
-            # 2. 移动并重命名为 index.md
-            target_path = os.path.join(new_folder_path, "index.md")
-            shutil.move(item_path, target_path)
-            
-            print(f"✅ 已转换: {item} -> {file_name}/index.md")
+        print(f"\n📊 统计信息:")
+        print(f"✅ 成功转换 {converted_count} 个文件")
+        print(f"⚠️  跳过 {skipped_count} 个文件")
+        
+    except Exception as e:
+        if verbose:
+            logging.error(f"❌ 执行失败: {e}")
+        else:
+            print(f"❌ 执行失败: {e}")
+
+def main():
+    args = parse_args()
+    convert_md_to_folder_notes(args.content_dir, args.verbose)
 
 if __name__ == "__main__":
-    convert_md_to_folder_notes()
+    main()

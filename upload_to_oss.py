@@ -1,9 +1,7 @@
 """
 【工具名称】：upload_to_oss.py (ModelScope 大文件上传工具)
 【使用方法】：
-    1. 确保根目录存在 .env 文件，并配置了 MODELSCOPE_TOKEN。
-    2. 修改代码中的 LOCAL_FILE_PATH 为你要上传的本地文件路径。
-    3. 运行：python upload_to_oss.py
+    python upload_to_oss.py [--file FILE] [--config CONFIG] [--verbose]
 【功能说明】：
     - 自动清洗文件名，确保 URL 链接不含空格/中文。
     - 通过 Git LFS 将大文件推送到 ModelScope 托管。
@@ -17,18 +15,38 @@ import os
 import stat
 import shutil
 import subprocess
-import re  # 导入正则，用来清洗文件名
+import re
+import argparse
+import logging
 from dotenv import load_dotenv
 
-# 1. 加载 Token
-load_dotenv()
-ACCESS_TOKEN = os.getenv("MODELSCOPE_TOKEN")
+def parse_args():
+    parser = argparse.ArgumentParser(description='ModelScope 大文件上传工具')
+    parser.add_argument('--file', help='要上传的文件路径')
+    parser.add_argument('--config', default='upload_config.yaml', help='配置文件路径')
+    parser.add_argument('--verbose', action='store_true', help='启用详细日志')
+    return parser.parse_args()
 
-# 2. 配置信息
-USERNAME = "DenShnauder" 
-REPO_NAME = "Tongji-Res-Archive" 
-LOCAL_FILE_PATH = r"G:\工程热力学.zip"  # 你要上传的文件路径
-WORK_DIR = "./temp_git_workdir"
+def load_config(config_path):
+    if not os.path.exists(config_path):
+        # 默认配置
+        return {
+            'username': 'DenShnauder',
+            'repo_name': 'Tongji-Res-Archive',
+            'work_dir': './temp_git_workdir'
+        }
+    
+    try:
+        import yaml
+        with open(config_path, 'r', encoding='utf-8') as f:
+            return yaml.safe_load(f)
+    except ImportError:
+        logging.warning("⚠️  未安装 yaml 模块，使用默认配置")
+        return {
+            'username': 'DenShnauder',
+            'repo_name': 'Tongji-Res-Archive',
+            'work_dir': './temp_git_workdir'
+        }
 
 def sanitize_name(name):
     """清洗文件名：转小写、去空格、去特殊字符，确保 URL 不会断掉"""
@@ -43,45 +61,57 @@ def remove_readonly(func, path, excinfo):
 
 def force_delete_dir(dir_path):
     if os.path.exists(dir_path):
-        shutil.rmtree(dir_path, onerror=remove_readonly)
+        try:
+            shutil.rmtree(dir_path, onerror=remove_readonly)
+        except Exception as e:
+            logging.error(f"❌ 删除目录失败: {dir_path}, 错误: {e}")
 
 def run_git_cmd(cmd, cwd=None):
-    subprocess.run(cmd, shell=True, cwd=cwd, check=True, capture_output=True)
-
-def upload_via_raw_git():
-    if not ACCESS_TOKEN:
-        print("❌ 错误：未在 .env 中找到 MODELSCOPE_TOKEN")
-        return
-
-    # 预先清洗文件名
-    original_filename = os.path.basename(LOCAL_FILE_PATH)
-    clean_filename = sanitize_name(original_filename)
-    
-    GIT_URL = f"https://oauth2:{ACCESS_TOKEN}@www.modelscope.cn/datasets/{USERNAME}/{REPO_NAME}.git"
-
     try:
-        force_delete_dir(WORK_DIR)
-        print(f"📥 正在连接 ModelScope 仓库...")
-        run_git_cmd(f"git clone --depth 1 {GIT_URL} {WORK_DIR}")
+        result = subprocess.run(cmd, shell=True, cwd=cwd, check=True, capture_output=True, text=True)
+        return result
+    except subprocess.CalledProcessError as e:
+        logging.error(f"❌ 命令执行失败: {cmd}")
+        logging.error(f"错误输出: {e.stderr}")
+        raise e
 
-        dest_path = os.path.join(WORK_DIR, clean_filename)
+def upload_file(file_path, config, access_token):
+    """上传单个文件"""
+    try:
+        username = config['username']
+        repo_name = config['repo_name']
+        work_dir = config['work_dir']
+        
+        # 预先清洗文件名
+        original_filename = os.path.basename(file_path)
+        clean_filename = sanitize_name(original_filename)
+        
+        git_url = f"https://oauth2:{access_token}@www.modelscope.cn/datasets/{username}/{repo_name}.git"
+        
+        # 清理工作目录
+        force_delete_dir(work_dir)
+        
+        logging.info(f"📥 正在连接 ModelScope 仓库...")
+        run_git_cmd(f"git clone --depth 1 {git_url} {work_dir}")
+        
+        dest_path = os.path.join(work_dir, clean_filename)
         
         # 复制文件
-        if os.path.isdir(LOCAL_FILE_PATH):
-            shutil.copytree(LOCAL_FILE_PATH, dest_path)
+        if os.path.isdir(file_path):
+            shutil.copytree(file_path, dest_path)
         else:
-            shutil.copy(LOCAL_FILE_PATH, dest_path)
-
+            shutil.copy(file_path, dest_path)
+        
         # Git LFS 和 推送
-        print(f"🚀 正在上传文件: {clean_filename} ...")
-        run_git_cmd(f"git lfs track \"{clean_filename}\"", cwd=WORK_DIR)
-        run_git_cmd("git add .", cwd=WORK_DIR)
-        run_git_cmd(f'git commit -m "Upload: {clean_filename}"', cwd=WORK_DIR)
-        run_git_cmd("git push", cwd=WORK_DIR)
-
+        logging.info(f"🚀 正在上传文件: {clean_filename} ...")
+        run_git_cmd(f"git lfs track \"{clean_filename}\"", cwd=work_dir)
+        run_git_cmd("git add .", cwd=work_dir)
+        run_git_cmd(f'git commit -m "Upload: {clean_filename}"', cwd=work_dir)
+        run_git_cmd("git push", cwd=work_dir)
+        
         # 【核心改进】自动生成直链
         # ModelScope 的文件直链格式如下：
-        download_url = f"https://www.modelscope.cn/datasets/{USERNAME}/{REPO_NAME}/resolve/master/{clean_filename}"
+        download_url = f"https://www.modelscope.cn/datasets/{username}/{repo_name}/resolve/master/{clean_filename}"
         
         print("\n" + "="*50)
         print("✅ 上传成功！")
@@ -90,11 +120,45 @@ def upload_via_raw_git():
         print("\n📝 请复制下方 Markdown 代码到你的 Quartz 笔记中：")
         print(f"> [!DOWNLOAD] 资源下载\n> [{original_filename}]({download_url})")
         print("="*50)
-
+        
+        return True
+        
     except Exception as e:
-        print(f"❌ 流程出错: {e}")
+        logging.error(f"❌ 上传失败: {e}")
+        return False
     finally:
-        force_delete_dir(WORK_DIR)
+        # 清理工作目录
+        force_delete_dir(work_dir)
+
+def main():
+    args = parse_args()
+    
+    # 配置日志
+    if args.verbose:
+        logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
+    else:
+        logging.basicConfig(level=logging.WARNING, format='%(asctime)s - %(message)s')
+    
+    # 加载环境变量
+    load_dotenv()
+    access_token = os.getenv("MODELSCOPE_TOKEN")
+    
+    if not access_token:
+        print("❌ 错误：未在 .env 中找到 MODELSCOPE_TOKEN")
+        return
+    
+    # 加载配置
+    config = load_config(args.config)
+    
+    # 上传文件
+    if args.file:
+        if os.path.exists(args.file):
+            upload_file(args.file, config, access_token)
+        else:
+            print(f"❌ 错误：文件不存在: {args.file}")
+    else:
+        print("❌ 错误：请指定要上传的文件路径，使用 --file 参数")
+        print("例如：python upload_to_oss.py --file \"G:\工程热力学.zip\"")
 
 if __name__ == "__main__":
-    upload_via_raw_git()
+    main()

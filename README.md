@@ -18,10 +18,46 @@
 
 ## 🛠️ 开发者工具箱
 仓库根目录包含以下自动化维护脚本：
-- `sync.py`: 外部资源一键抓取。
-- `md_to_folder.py`: 修复 Quartz 404 路径问题。
-- `auto_index.py`: 自动生成目录导航。
-- `upload_to_oss.py`: 大文件上云并生成下载直链。
+- `tools.py`: **统一工具管理脚本**，提供一致的命令行接口管理所有工具。
+- `sync.py`: 外部资源一键抓取，支持并行处理和配置文件。
+- `md_to_folder.py`: 修复 Quartz 404 路径问题，支持命令行参数。
+- `auto_index.py`: 自动生成目录导航，支持命令行参数。
+- `upload_to_oss.py`: 大文件上云并生成下载直链，支持命令行参数。
+
+### 使用方法
+
+**统一工具管理（推荐）：**
+```bash
+# 查看帮助
+python tools.py --help
+
+# 自动补全索引
+python tools.py index --content-dir content --verbose
+
+# Markdown 文件转文件夹
+python tools.py md2folder --content-dir content --verbose
+
+# 同步外部资源
+python tools.py sync --config sync_config.yaml --verbose --parallel
+
+# 上传大文件
+python tools.py upload --file "G:\工程热力学.zip" --verbose
+```
+
+**单个脚本使用：**
+```bash
+# 自动补全索引
+python auto_index.py --content-dir content --verbose
+
+# Markdown 文件转文件夹
+python md_to_folder.py --content-dir content --verbose
+
+# 同步外部资源
+python sync.py --config sync_config.yaml --verbose --parallel
+
+# 上传大文件
+python upload_to_oss.py --file "G:\工程热力学.zip" --verbose
+```
 
 ## 🤝 如何参与贡献？
 我们非常欢迎你加入！你可以：
