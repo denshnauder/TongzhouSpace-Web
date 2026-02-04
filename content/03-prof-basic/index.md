@@ -1,14 +1,15 @@
 ---
-title: 专业基础课
+title: 03-prof-basic
 ---
 
-欢迎访问本页面。
+## 子目录
 
-- [地震工程学](earthquake-engineering/)
-- [弹性力学](elasticity/)
-- [电磁场与电磁波](electromagnetic-fields/)
-- [工程材料](engineering-materials/)
-- [工程力学](engineering-mechanics/)
-- [地下水动力学](groundwater-dynamics/)
-- [signal-and-system](signal-and-system/)
-- [thermodynamics](thermodynamics/)
+* [[earthquake-engineering]]
+* [[elasticity]]
+* [[electromagnetic-fields]]
+* [[engineering-materials]]
+* [[engineering-mechanics]]
+* [[groundwater-dynamics]]
+* [[signal-and-system]]
+* [[thermodynamics]]
+

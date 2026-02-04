@@ -2,7 +2,7 @@
 title: 3-image-filtering
 ---
 
-欢迎访问本页面。
+## 文件
 
-- [butterworthFilter.m](butterworthFilter.m)
-- [ideaFilter.m](ideaFilter.m)
+* [[butterworthFilter.m]]
+* [[ideaFilter.m]]

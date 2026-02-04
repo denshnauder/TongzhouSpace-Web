@@ -2,6 +2,6 @@
 title: testMeanFilter
 ---
 
-欢迎访问本页面。
+## 文件
 
-- [testCovolutionSound.m](testCovolutionSound.m)
+* [[testCovolutionSound.m]]

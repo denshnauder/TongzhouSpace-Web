@@ -2,6 +2,6 @@
 title: 4-gibbs-phenomenon
 ---
 
-欢迎访问本页面。
+## 文件
 
-- [gibbs.m](gibbs.m)
+* [[gibbs.m]]
