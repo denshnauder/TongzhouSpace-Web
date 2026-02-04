@@ -6,7 +6,7 @@ import BodyConstructor from "../../components/Body"
 import { pageResources, renderPage } from "../../components/renderPage"
 import { FullPageLayout } from "../../cfg"
 import { pathToRoot } from "../../util/path"
-import { defaultContentPageLayout, sharedPageComponents } from "../../../quartz.layout"
+import { defaultContentPageLayout, indexPageLayout, sharedPageComponents } from "../../../quartz.layout"
 import { Content } from "../../components"
 import { styleText } from "util"
 import { write } from "./helpers"
@@ -81,11 +81,19 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
         const slug = file.data.slug!
         if (slug === "index") {
           containsIndex = true
+          // Use indexPageLayout for root index page
+          const indexOpts: FullPageLayout = {
+            ...sharedPageComponents,
+            ...indexPageLayout,
+            pageBody: Content(),
+            ...userOpts,
+          }
+          yield processContent(ctx, tree, file.data, allFiles, indexOpts, resources)
+        } else {
+          // only process non-tag pages and non-index pages
+          if (slug.endsWith("/index") || slug.startsWith("tags/")) continue
+          yield processContent(ctx, tree, file.data, allFiles, opts, resources)
         }
-
-        // only process home page, non-tag pages, and non-index pages
-        if (slug.endsWith("/index") || slug.startsWith("tags/")) continue
-        yield processContent(ctx, tree, file.data, allFiles, opts, resources)
       }
 
       if (!containsIndex) {
@@ -112,9 +120,20 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
       for (const [tree, file] of content) {
         const slug = file.data.slug!
         if (!changedSlugs.has(slug)) continue
-        if (slug.endsWith("/index") || slug.startsWith("tags/")) continue
-
-        yield processContent(ctx, tree, file.data, allFiles, opts, resources)
+        
+        if (slug === "index") {
+          // Use indexPageLayout for root index page
+          const indexOpts: FullPageLayout = {
+            ...sharedPageComponents,
+            ...indexPageLayout,
+            pageBody: Content(),
+            ...userOpts,
+          }
+          yield processContent(ctx, tree, file.data, allFiles, indexOpts, resources)
+        } else {
+          if (slug.endsWith("/index") || slug.startsWith("tags/")) continue
+          yield processContent(ctx, tree, file.data, allFiles, opts, resources)
+        }
       }
     },
   }
