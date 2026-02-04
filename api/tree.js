@@ -60,6 +60,7 @@ export default async (req, res) => {
     return res.status(200).json(sortedFolders);
   } catch (error) {
     console.error('Error getting directory tree:', error);
-    return res.status(500).json({ error: 'Failed to get directory tree' });
+    // Return empty array instead of crashing
+    return res.status(200).json([]);
   }
 };

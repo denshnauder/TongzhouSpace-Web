@@ -22,23 +22,30 @@ export default (() => {
 
     // Fetch folder list on component mount
     useEffect(() => {
+      let isMounted = true;
       const fetchFolders = async () => {
         try {
-          const response = await fetch('/api/tree');
-          if (response.ok) {
+          // 设定 3 秒超时：如果后端 3 秒不回话，我们就断开请求，切换为手动模式
+          const controller = new AbortController();
+          const timeoutId = setTimeout(() => controller.abort(), 3000);
+
+          const response = await fetch('/api/tree', { signal: controller.signal });
+          clearTimeout(timeoutId);
+
+          if (isMounted && response.ok) {
             const data = await response.json();
             setFolders(data);
-          } else {
-            console.error('Failed to fetch folders:', response.status);
           }
         } catch (error) {
-          console.error('Error fetching folders:', error);
+          console.log('自动获取目录失败或超时，切换为手动模式');
         } finally {
-          setIsLoading(false);
+          // 🌟 核心修复：无论成功、失败还是超时，必须立刻结束 Loading 状态！
+          if (isMounted) setIsLoading(false);
         }
       };
 
       fetchFolders();
+      return () => { isMounted = false; };
     }, []);
 
     // Handle input change and filter folders
@@ -216,7 +223,7 @@ export default (() => {
                 border: '1px solid #ddd',
                 boxSizing: 'border-box'
               }}
-              placeholder="输入或选择文件夹 (例如: 大二上/汽车理论)"
+              placeholder="例如：专业课/汽车学院/汽车理论 (建议按学科分类)"
             />
             
             {/* Suggestions dropdown */}
