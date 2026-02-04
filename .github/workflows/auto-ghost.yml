@@ -1,0 +1,38 @@
+name: Auto Ghost Migration
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+jobs:
+  ghost-migration:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install modelscope python-dotenv tqdm
+
+    - name: Run ghost migration
+      run: python scripts/ghost_migrate.py
+      env:
+        MODELSCOPE_TOKEN: ${{ secrets.MODELSCOPE_TOKEN }}
+        MODELSCOPE_REPO_ID: ${{ secrets.MODELSCOPE_REPO_ID }}
+
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git diff --quiet && git diff --staged --quiet || git commit -m "refactor: auto-ghostify assets [skip ci]"
+        git push

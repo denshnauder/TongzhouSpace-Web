@@ -6,7 +6,7 @@ interface FileWithContent {
   content: string;
 }
 
-export default (() => {
+export default ((userOpts?: any) => {
   const FileUploader: QuartzComponent = () => {
     const [selectedPath, setSelectedPath] = useState<string>('大二上/汽车理论');
     const [selectedFile, setSelectedFile] = useState<File | null>(null);
