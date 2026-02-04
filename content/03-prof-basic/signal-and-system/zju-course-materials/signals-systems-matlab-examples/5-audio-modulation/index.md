@@ -1,8 +1,11 @@
 ---
-title: 5. 两个声音信号的调制与解调
+title: 5-audio-modulation
 ---
 
-## 📂 自动归档文件列表
-> 以下文件由同步脚本自动生成链接，点击即可预览或下载。
+欢迎访问本页面。
 
-- 💻 [modulation.m](modulation.m)
+## 相关链接
+
+- [期末考试](exams/)
+- [课件](lectures/)
+- [modulation.m](modulation.m)

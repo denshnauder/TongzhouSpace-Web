@@ -1,14 +1,24 @@
 """
 【工具名称】：md_to_folder.py (Markdown 文件转文件夹模式工具)
 【使用方法】：
-    python md_to_folder.py [--content-dir CONTENT_DIR] [--verbose]
+    python scripts/md_to_folder.py [--content-dir CONTENT_DIR] [--verbose]
 【功能说明】：
     - 扫描 content 目录下所有落单的 .md 文件。
     - 为每个文件创建同名文件夹，并将文件重命名为 index.md 移入其中。
     - 它是解决 Quartz 404 错误（因为路径不匹配）的最快方案。
+【参数说明】：
+    --content-dir CONTENT_DIR  - 内容目录路径，默认为 content
+    --verbose                 - 启用详细日志
 【注意事项】：
     - 会直接移动文件。运行前请确保 content 目录下没有与文件名同名的文件夹。
+【示例】：
+    # 使用默认参数
+    python scripts/md_to_folder.py
+    
+    # 指定内容目录并启用详细日志
+    python scripts/md_to_folder.py --content-dir content --verbose
 """
+
 
 import os
 import shutil

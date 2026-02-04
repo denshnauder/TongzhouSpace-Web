@@ -1,8 +1,11 @@
 ---
-title: 6. 利用快速傅里叶变换打印声音频谱
+title: 6-fft-sound-spectrum
 ---
 
-## 📂 自动归档文件列表
-> 以下文件由同步脚本自动生成链接，点击即可预览或下载。
+欢迎访问本页面。
 
-- 💻 [testFrequency.m](testFrequency.m)
+## 相关链接
+
+- [期末考试](exams/)
+- [课件](lectures/)
+- [testFrequency.m](testFrequency.m)

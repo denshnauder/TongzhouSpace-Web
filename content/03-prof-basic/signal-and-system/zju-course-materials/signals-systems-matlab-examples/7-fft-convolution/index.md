@@ -1,12 +1,15 @@
 ---
-title: 7. 利用快速傅里叶变换进行卷积运算
+title: 7-fft-convolution
 ---
 
-## 📂 自动归档文件列表
-> 以下文件由同步脚本自动生成链接，点击即可预览或下载。
+欢迎访问本页面。
 
-- 💻 [convNew.m](convNew.m)
-- 💻 [convNew2.m](convNew2.m)
-- 💻 [fftNew.m](fftNew.m)
-- 💻 [ifftNew.m](ifftNew.m)
-- 💻 [test.m](test.m)
+## 相关链接
+
+- [convNew.m](convNew.m)
+- [convNew2.m](convNew2.m)
+- [期末考试](exams/)
+- [fftNew.m](fftNew.m)
+- [ifftNew.m](ifftNew.m)
+- [课件](lectures/)
+- [test.m](test.m)

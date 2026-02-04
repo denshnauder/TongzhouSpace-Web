@@ -1,8 +1,11 @@
 ---
-title: 4. 吉布斯现象展示
+title: 4-gibbs-phenomenon
 ---
 
-## 📂 自动归档文件列表
-> 以下文件由同步脚本自动生成链接，点击即可预览或下载。
+欢迎访问本页面。
 
-- 💻 [gibbs.m](gibbs.m)
+## 相关链接
+
+- [期末考试](exams/)
+- [gibbs.m](gibbs.m)
+- [课件](lectures/)

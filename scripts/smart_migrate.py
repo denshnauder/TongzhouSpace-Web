@@ -1,10 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Smart migrate script for Quartz content restructuring
-
-Moves content from time-based folders to category-based folders
-with English names and proper tagging.
+【工具名称】：smart_migrate.py (智能迁移工具)
+【使用方法】：
+    python scripts/smart_migrate.py
+【功能说明】：
+    - 将内容从时间基文件夹迁移到分类基文件夹
+    - 使用英文名称和适当的标签
+    - 基于课程映射字典自动分类内容
+【注意事项】：
+    - 需要安装 pypinyin 包：pip install pypinyin
+【示例】：
+    # 运行智能迁移
+    python scripts/smart_migrate.py
 """
 
 import os

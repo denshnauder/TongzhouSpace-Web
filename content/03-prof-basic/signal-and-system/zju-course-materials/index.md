@@ -1,9 +1,15 @@
 ---
-title: 浙大VipaiLab_课程资料
+title: zju-course-materials
 ---
 
-# 信号与系统课程资料
+欢迎访问本页面。
 
-课程链接：https://www.bilibili.com/video/BV1g94y1Q76G/
+## 相关链接
 
-本次课程的特色是：对理论有严格的推导，着重于理论和实践的结合；注意一维信号和二维信号相结合；用实践和理论统一离散和连续信号的知识体系；给了较多matlab编程训练。
+- [2022-signals-systems-quizzes](2022-signals-systems-quizzes/)
+- [PPT](PPT/)
+- [期末考试](exams/)
+- [homework-and-answers](homework-and-answers/)
+- [lecture-notes](lecture-notes/)
+- [课件](lectures/)
+- [signals-systems-matlab-examples](signals-systems-matlab-examples/)

@@ -1,13 +1,35 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Main script for TongzhouSpace content management
-
-This script integrates all content management functions:
-1. Smart migration (smart_migrate.py)
-2. File processing (process_files.py)
-3. Index generation (auto_index.py)
-4. MD to folder conversion (md_to_folder.py)
+【工具名称】：main.py (统一工具管理脚本)
+【使用方法】：
+    python scripts/main.py [命令] [参数]
+【功能说明】：
+    统一管理所有内容管理工具，提供一致的命令行接口
+【可用命令】：
+    migrate     - 智能迁移内容到分类结构
+    process     - 处理文件（解压、大文件处理）
+    index       - 生成缺失的 index.md 文件
+    folderize   - 将 MD 文件转换为文件夹结构
+    all         - 按顺序运行所有命令
+【示例】：
+    # 查看帮助
+    python scripts/main.py --help
+    
+    # 智能迁移内容
+    python scripts/main.py migrate
+    
+    # 处理文件
+    python scripts/main.py process
+    
+    # 生成索引
+    python scripts/main.py index
+    
+    # 转换 MD 文件
+    python scripts/main.py folderize
+    
+    # 运行所有命令
+    python scripts/main.py all
 """
 
 import os

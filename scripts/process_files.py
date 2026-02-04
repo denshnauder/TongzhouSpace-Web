@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Process files in content directory:
-1. Unzip zip files (< 100MB) into folders with the same name
-2. Handle Chinese filename encoding issues
-3. Filter junk files
-4. Generate index.md files for unzipped folders
-5. Skip large files (> 100MB) and call upload_to_oss placeholder
+【工具名称】：process_files.py (文件处理工具)
+【使用方法】：
+    python scripts/process_files.py
+【功能说明】：
+    - 解压 zip 文件 (< 100MB) 到同名文件夹中
+    - 处理中文文件名编码问题
+    - 过滤垃圾文件（__MACOSX、.DS_Store、Thumbs.db、.git）
+    - 为解压的文件夹生成 index.md 文件
+    - 处理大文件 (> 100MB) 并调用 upload_to_oss 占位函数
+【示例】：
+    # 处理所有文件
+    python scripts/process_files.py
 """
+
 
 import os
 import zipfile

@@ -1,17 +1,13 @@
 ---
-title: 工程热力学
+title: thermodynamics
 ---
 
-## 工程热力学
+欢迎访问本页面。
 
-本目录包含工程热力学课程的相关材料，包括实验、作业和学习资料。
+## 相关链接
 
-### 目录结构
-
-- **experiments/**: 实验相关材料
-- **homework/**: 作业和练习
-- **materials/**: 学习资料和参考书籍
-
-### 课程简介
-
-工程热力学是研究热能与其他形式能量相互转换规律的学科，是能源动力、机械工程等专业的重要基础课程。
+- [期末考试](exams/)
+- [experiments](experiments/)
+- [homework](homework/)
+- [课件](lectures/)
+- [materials](materials/)
