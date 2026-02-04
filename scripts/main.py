@@ -44,7 +44,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 try:
     from smart_migrate import main as smart_migrate_main
     from process_files import process_files as process_files_main
-    from auto_index import fix_missing_indices as auto_index_main
+    from generate_index import generate_index as auto_index_main
     from md_to_folder import convert_md_to_folder_notes as md_to_folder_main
 except ImportError as e:
     print(f"Error importing modules: {e}")
@@ -104,7 +104,7 @@ def run_all_commands(content_dir, verbose):
     print("\n3. Generating missing index.md files...")
     print("-" * 60)
     try:
-        auto_index_main(content_dir, verbose)
+        auto_index_main()
     except Exception as e:
         print(f"Error running index: {e}")
     
@@ -138,7 +138,7 @@ def main():
         process_files_main()
     elif args.command == 'index':
         print("Generating missing index.md files...")
-        auto_index_main(args.content_dir, args.verbose)
+        auto_index_main()
     elif args.command == 'folderize':
         print("Converting MD files to folder structure...")
         md_to_folder_main(args.content_dir, args.verbose)
