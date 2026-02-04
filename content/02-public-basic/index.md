@@ -1,11 +1,8 @@
 ---
-title: 02-public-basic
+title: 02 - 公共基础
 ---
 
-## 子目录
+## 目录列表 (Directories)
 
-* [[calculus]]
-* [[complex-analysis]]
-* [[linear-algebra]]
-* [[physics]]
-
+| 内容 | 英文标识 |
+| :--- | :--- |

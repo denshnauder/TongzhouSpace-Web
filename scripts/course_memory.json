@@ -1,0 +1,57 @@
+{
+  "信号与系统": {
+    "category": "04-prof-compulsory",
+    "standard_name": "signal-and-system",
+    "timestamp": "1770223761"
+  },
+  "同济大学": {
+    "category": "99-others",
+    "standard_name": "同济大学",
+    "timestamp": "1770223767"
+  },
+  "工程热力学": {
+    "category": "04-prof-compulsory",
+    "standard_name": "engineering-thermodynamics",
+    "timestamp": "1770223810"
+  },
+  "汽车构造": {
+    "category": "03-prof-basic",
+    "standard_name": "auto-strutrue",
+    "timestamp": "1770223832"
+  },
+  "汽车构造资料": {
+    "category": "03-prof-basic",
+    "standard_name": "auto-strutrue",
+    "timestamp": "1770223852"
+  },
+  "ppt": {
+    "category": "99-others",
+    "standard_name": "ppt",
+    "timestamp": "1770223869"
+  },
+  "教材": {
+    "category": "99-others",
+    "standard_name": "教材",
+    "timestamp": "1770223877"
+  },
+  "试卷": {
+    "category": "99-others",
+    "standard_name": "试卷",
+    "timestamp": "1770223882"
+  },
+  "exams": {
+    "category": "99-others",
+    "standard_name": "exams",
+    "timestamp": "1770223884"
+  },
+  "lectures": {
+    "category": "99-others",
+    "standard_name": "lectures",
+    "timestamp": "1770223885"
+  },
+  "交通工程学": {
+    "category": "99-others",
+    "standard_name": "交通工程学",
+    "timestamp": "1770223891"
+  }
+}

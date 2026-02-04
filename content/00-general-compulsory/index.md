@@ -1,8 +1,8 @@
 ---
-title: 00-general-compulsory
+title: 00 - 通识必修
 ---
 
-## 子目录
+## 目录列表 (Directories)
 
-* [[situation-policy]]
-
+| 内容 | 英文标识 |
+| :--- | :--- |

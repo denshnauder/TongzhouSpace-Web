@@ -1,0 +1,19 @@
+{
+  "files": [
+    {
+      "name": "2008秋课程考试B卷.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/2008秋课程考试B卷.pdf",
+      "size": "218.9KB"
+    },
+    {
+      "name": "2011秋试卷及答案.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/2011秋试卷及答案.pdf",
+      "size": "1.1MB"
+    },
+    {
+      "name": "高等数学上期末试题.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/高等数学上期末试题.pdf",
+      "size": "209.4KB"
+    }
+  ]
+}

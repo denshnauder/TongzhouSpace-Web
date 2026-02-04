@@ -1,10 +1,8 @@
 ---
-title: 04-prof-compulsory
+title: 04 - 专业必修
 ---
 
-## 子目录
+## 目录列表 (Directories)
 
-* [[auto-structure]]
-* [[auto-theory]]
-* [[transportation-engineering]]
-
+| 内容 | 英文标识 |
+| :--- | :--- |

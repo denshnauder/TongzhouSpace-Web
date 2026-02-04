@@ -1,3 +1,8 @@
 ---
-title: "General Elective"
+title: 01 - 通识选修
 ---
+
+## 目录列表 (Directories)
+
+| 内容 | 英文标识 |
+| :--- | :--- |

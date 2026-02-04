@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "name": "2008秋试卷及答案.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/2008秋试卷及答案.pdf",
+      "size": "269.8KB"
+    },
+    {
+      "name": "中国近代史纲要试题及答案.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/中国近代史纲要试题及答案.pdf",
+      "size": "302.8KB"
+    },
+    {
+      "name": "标准预测试卷（一）.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/标准预测试卷（一）.pdf",
+      "size": "365.9KB"
+    },
+    {
+      "name": "标准预测试卷（七）.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/标准预测试卷（七）.pdf",
+      "size": "268.6KB"
+    },
+    {
+      "name": "模拟试卷2套.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/模拟试卷2套.pdf",
+      "size": "378.7KB"
+    }
+  ]
+}

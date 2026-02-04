@@ -1,0 +1,44 @@
+{
+  "files": [
+    {
+      "name": "分布式线控底盘车辆车轮转角传感器故障诊断与车辆状态估计研究_王紫煦.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/分布式线控底盘车辆车轮转角传感器故障诊断与车辆状态估计研究_王紫煦.pdf",
+      "size": "15.1MB"
+    },
+    {
+      "name": "基于FAEKF算法的线控转向传感器的容错控制_庄伟东.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/基于FAEKF算法的线控转向传感器的容错控制_庄伟东.pdf",
+      "size": "2.0MB"
+    },
+    {
+      "name": "基于多传感器融合的线控转向系统控制研究_苏荣键.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/基于多传感器融合的线控转向系统控制研究_苏荣键.pdf",
+      "size": "8.9MB"
+    },
+    {
+      "name": "方向盘转角传感器性能标定及检测系统设计_陈佳威.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/方向盘转角传感器性能标定及检测系统设计_陈佳威.pdf",
+      "size": "520.5KB"
+    },
+    {
+      "name": "方向盘转角传感器研究进展_杨财.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/方向盘转角传感器研究进展_杨财.pdf",
+      "size": "447.5KB"
+    },
+    {
+      "name": "汽车线控转向系统研究进展综述_陈俐.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/汽车线控转向系统研究进展综述_陈俐.pdf",
+      "size": "1.6MB"
+    },
+    {
+      "name": "汽车线控转向系统齿条力观测方法研究_赵欣羽.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/汽车线控转向系统齿条力观测方法研究_赵欣羽.pdf",
+      "size": "1.3MB"
+    },
+    {
+      "name": "线控转向系统控制技术综述_赵万忠.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/线控转向系统控制技术综述_赵万忠.pdf",
+      "size": "2.3MB"
+    }
+  ]
+}

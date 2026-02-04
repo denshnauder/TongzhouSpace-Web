@@ -1,15 +1,8 @@
 ---
-title: 03-prof-basic
+title: 03 - 专业基础
 ---
 
-## 子目录
+## 目录列表 (Directories)
 
-* [[earthquake-engineering]]
-* [[elasticity]]
-* [[electromagnetic-fields]]
-* [[engineering-materials]]
-* [[engineering-mechanics]]
-* [[groundwater-dynamics]]
-* [[signal-and-system]]
-* [[thermodynamics]]
-
+| 内容 | 英文标识 |
+| :--- | :--- |

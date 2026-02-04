@@ -1,0 +1,19 @@
+{
+  "files": [
+    {
+      "name": "2005-2006第二学期期末试卷.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/2005-2006第二学期期末试卷.pdf",
+      "size": "1.4MB"
+    },
+    {
+      "name": "2006-2007第一学期期末试卷.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/2006-2007第一学期期末试卷.pdf",
+      "size": "1.2MB"
+    },
+    {
+      "name": "2006-2007第二学期期末试卷.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/2006-2007第二学期期末试卷.pdf",
+      "size": "1.9MB"
+    }
+  ]
+}

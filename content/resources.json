@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "name": "信号与系统.zip",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/信号与系统.zip",
+      "size": "470.7MB"
+    },
+    {
+      "name": "工程热力学.zip",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/工程热力学.zip",
+      "size": "72.7MB"
+    },
+    {
+      "name": "汽车构造.zip",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/汽车构造.zip",
+      "size": "871.7MB"
+    },
+    {
+      "name": "汽车构造资料.zip",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/汽车构造资料.zip",
+      "size": "347.9MB"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "files": [
+    {
+      "name": "第1章.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/第1章.pdf",
+      "size": "8.2MB"
+    },
+    {
+      "name": "第2章.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/第2章.pdf",
+      "size": "4.3MB"
+    },
+    {
+      "name": "第3章.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/第3章.pdf",
+      "size": "8.3MB"
+    },
+    {
+      "name": "第4章.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/第4章.pdf",
+      "size": "5.5MB"
+    },
+    {
+      "name": "第5章.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/第5章.pdf",
+      "size": "3.8MB"
+    },
+    {
+      "name": "第6章.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/第6章.pdf",
+      "size": "5.4MB"
+    },
+    {
+      "name": "第7章.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/第7章.pdf",
+      "size": "3.3MB"
+    },
+    {
+      "name": "零输入响应与零状态响应.pdf",
+      "url": "https://modelscope.cn/api/v1/models/DenShnauder/Tongji-Res-Archive/files/零输入响应与零状态响应.pdf",
+      "size": "1.4MB"
+    }
+  ]
+}
