@@ -11,7 +11,8 @@ export default async (req, res) => {
     // Get GitHub token from environment variables
     const githubToken = process.env.GITHUB_TOKEN;
     if (!githubToken) {
-      return res.status(500).json({ error: 'GitHub Token not configured' });
+      // Return empty array instead of crashing
+      return res.status(200).json([]);
     }
 
     // Initialize Octokit

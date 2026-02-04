@@ -185,7 +185,7 @@ export default (() => {
     return (
       <div style={{
         padding: '20px',
-        border: '5px solid red',
+        border: '1px solid #e5e7eb',
         borderRadius: '8px',
         backgroundColor: '#faf8f8'
       }}>
@@ -216,7 +216,7 @@ export default (() => {
                 border: '1px solid #ddd',
                 boxSizing: 'border-box'
               }}
-              placeholder="例如：大二上/汽车理论"
+              placeholder="输入或选择文件夹 (例如: 大二上/汽车理论)"
             />
             
             {/* Suggestions dropdown */}
