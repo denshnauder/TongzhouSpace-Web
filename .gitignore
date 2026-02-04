@@ -14,3 +14,4 @@ replit.nix
 temp_git_workdir/
 node_modules/
 .quartz-cache/
+.zip
