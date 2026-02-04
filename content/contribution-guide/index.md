@@ -45,72 +45,81 @@ date: 2026-01-31
 * **模式**：必须采用 **文件夹模式 (Folder Note)**。即：`学科名/index.md`。
 
 ### 2. 自动化脚本工具包 (The Toolkit)
-我们在根目录准备了多个 Python 脚本来帮你"偷懒"。**在提交代码前，请按需运行它们：**
+我们在 `scripts` 目录准备了多个 Python 脚本来帮你"偷懒"。**在提交代码前，请按需运行它们：**
 
 | 脚本名称 | 功能说明 | 何时使用 |
 | :--- | :--- | :--- |
-| `tools.py` | **统一工具管理脚本**，提供一致的命令行接口 | 推荐使用，可管理所有其他工具。 |
-| `md_to_folder.py` | 将落单的 `.md` 自动转为 `文件夹/index.md` | **解决 404 的核心脚本**。当你直接丢入 Markdown 文件后运行。 |
-| `auto_index.py` | 扫描所有目录，为缺失 `index.md` 的地方自动补齐 | 快速新建大量文件夹后使用。 |
-| `sync.py` | 自动从外校（如浙大、交大）仓库拉取最新资料 | 需要同步外部开源资源时运行。 |
-| `upload_to_oss.py` | 将 >50MB 的大文件上传至 ModelScope | 处理大体积压缩包、视频，获取下载直链。 |
+| `scripts/main.py` | **统一工具管理脚本**，提供一致的命令行接口 | 推荐使用，可管理所有其他工具。 |
+| `scripts/md_to_folder.py` | 将落单的 `.md` 自动转为 `文件夹/index.md` | **解决 404 的核心脚本**。当你直接丢入 Markdown 文件后运行。 |
+| `scripts/auto_index.py` | 扫描所有目录，为缺失 `index.md` 的地方自动补齐 | 快速新建大量文件夹后使用。 |
+| `scripts/process_files.py` | 自动解压 zip 文件并处理大文件 | 上传包含多个文件的压缩包后运行。 |
+| `scripts/smart_migrate.py` | 智能迁移内容到分类结构 | 整理大量历史资料时运行。 |
 
 #### 使用方法
 
 **统一工具管理（推荐）：**
 ```bash
 # 查看帮助
-python tools.py --help
+python scripts/main.py --help
 
-# 自动补全索引
-python tools.py index --content-dir content --verbose
+# 智能迁移内容到分类结构
+python scripts/main.py migrate
 
-# Markdown 文件转文件夹
-python tools.py md2folder --content-dir content --verbose
+# 处理文件（解压、大文件处理）
+python scripts/main.py process
 
-# 同步外部资源
-python tools.py sync --config sync_config.yaml --verbose --parallel
+# 生成缺失的 index.md 文件
+python scripts/main.py index --content-dir content --verbose
 
-# 上传大文件
-python tools.py upload --file "G:\工程热力学.zip" --verbose
+# 将 MD 文件转换为文件夹结构
+python scripts/main.py folderize --content-dir content --verbose
+
+# 运行所有命令
+python scripts/main.py all --content-dir content --verbose
 ```
 
 **单个脚本使用：**
 ```bash
 # 自动补全索引
-python auto_index.py --content-dir content --verbose
+python scripts/auto_index.py --content-dir content --verbose
 
 # Markdown 文件转文件夹
-python md_to_folder.py --content-dir content --verbose
+python scripts/md_to_folder.py --content-dir content --verbose
 
-# 同步外部资源
-python sync.py --config sync_config.yaml --verbose --parallel
+# 处理文件（解压、大文件处理）
+python scripts/process_files.py
 
-# 上传大文件
-python upload_to_oss.py --file "G:\工程热力学.zip" --verbose
+# 智能迁移内容
+python scripts/smart_migrate.py
 ```
 
 ### 3. 大文件处理流程
-禁止将大型二进制文件（>100MB）直接 Push 到 GitHub。
-1. **使用命令行参数**：运行脚本时通过 `--file` 参数指定文件路径。
+禁止将大型二进制文件（>100MB）直接 Push 到 GitHub。我们的脚本会自动处理大文件：
+
+1. **上传文件**：将大文件放入 `content` 目录中的对应位置。
+2. **运行脚本**：执行文件处理脚本：
    ```bash
    # 使用统一工具
-   python tools.py upload --file "G:\工程热力学.zip" --verbose
+   python scripts/main.py process
    
    # 或直接使用脚本
-   python upload_to_oss.py --file "G:\工程热力学.zip" --verbose
+   python scripts/process_files.py
    ```
-2. 等待上传完成。
-3. **复制输出**：脚本会自动在控制台打印出一段 Markdown 下载块（带图标）。
-4. **粘贴**：将这段代码粘贴到对应学科的 `index.md` 中。
+3. **自动处理**：脚本会：
+   - 检测大于 100MB 的文件
+   - 为大文件创建同名文件夹
+   - 生成包含下载链接的 `index.md` 文件
+   - （未来版本）自动上传到 ModelScope 并获取直链
+4. **检查结果**：脚本执行完成后，会在控制台显示处理结果。
 
 ---
 
 ## ✅ 提交前自检 (Checklist)
 
-1. [ ] 是否已运行 `python tools.py md2folder --content-dir content`？
-2. [ ] 是否已运行 `python tools.py index --content-dir content`？
-3. [ ] 文件名是否包含空格或中文？（如有，请重命名或运行 `python tools.py sync` 的清洗逻辑）。
+1. [ ] 是否已运行 `python scripts/main.py folderize --content-dir content`？
+2. [ ] 是否已运行 `python scripts/main.py index --content-dir content`？
+3. [ ] 文件名是否包含空格或中文？（如有，请重命名）。
 4. [ ] 本地预览 `npx quartz build --serve` 是否一切正常？
+5. [ ] 上传的压缩包是否已被正确解压？（运行 `python scripts/main.py process` 检查）。
 
 ---

@@ -8,7 +8,6 @@ title: "🌊 同舟空间 (Tongzhou Space)"
 > 
 > ### 快速提交方式
 > - **右侧上传**：使用右侧的文件上传工具直接上传文件
-> - **指南参考**：[点击查看贡献指南](contribution-guide.md)
 > - **GitHub 提交**：[直接去 GitHub 提交 Issue (推荐)](https://github.com/denshnauder/TongzhouSpace/issues)
 > 
 > ### 支持的文件类型

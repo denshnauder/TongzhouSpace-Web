@@ -341,4 +341,4 @@ export default (() => {
   };
 
   return FileUploader;
-}) as QuartzComponentConstructor;
+}) satisfies QuartzComponentConstructor;
