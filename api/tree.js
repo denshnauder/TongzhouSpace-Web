@@ -1,7 +1,7 @@
 // Serverless function for getting directory tree from GitHub
-const { Octokit } = require('@octokit/rest');
+import { Octokit } from '@octokit/rest';
 
-module.exports = async (req, res) => {
+export default async (req, res) => {
   // Validate request method
   if (req.method !== 'GET') {
     return res.status(405).json({ error: 'Method Not Allowed' });
