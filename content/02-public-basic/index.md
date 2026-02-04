@@ -4,8 +4,6 @@ title: 公共基础课
 
 欢迎访问本页面。
 
-## 相关链接
-
 - [高等数学B上](calculus/)
 - [普通化学](chemistry/)
 - [复变函数](complex-analysis/)

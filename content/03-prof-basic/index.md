@@ -4,8 +4,6 @@ title: 专业基础课
 
 欢迎访问本页面。
 
-## 相关链接
-
 - [地震工程学](earthquake-engineering/)
 - [弹性力学](elasticity/)
 - [电磁场与电磁波](electromagnetic-fields/)

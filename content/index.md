@@ -4,8 +4,6 @@ title: content
 
 欢迎访问本页面。
 
-## 相关链接
-
 - [通识必修课](00-general-compulsory/)
 - [通识选修课](01-general-elective/)
 - [公共基础课](02-public-basic/)
@@ -15,5 +13,3 @@ title: content
 - [实践环节](06-practical/)
 - [未分类课程](99-unsorted/)
 - [contribution-guide](contribution-guide/)
-- [期末考试](exams/)
-- [课件](lectures/)
