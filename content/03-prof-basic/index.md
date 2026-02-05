@@ -2,7 +2,7 @@
 title: 03 - 专业基础
 ---
 
-## 目录列表 (Directories)
+# 📂 03 - 专业基础
 
-| 内容 | 英文标识 |
-| :--- | :--- |
+- 📁 [[principles-of-mechanics/index|机械原理]]
+- 📁 [[theoretical-mechanics/index|理论力学C]]

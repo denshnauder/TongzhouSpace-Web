@@ -1,0 +1,26 @@
+{
+  "keywords": {
+    "理力C": "theoretical-mechanics",
+    "理论力学C": "theoretical-mechanics",
+    "机械原理": "principles-of-mechanics",
+    "Mechanism and Machine Theory": "principles-of-mechanics",
+    "Theory of Machines and Mechanisms": "principles-of-mechanics"
+  },
+  "courses": {
+    "theoretical-mechanics": {
+      "name": "理论力学C",
+      "category": "03-prof-basic",
+      "path": "03-prof-basic\\theoretical-mechanics"
+    },
+    "principles-of-mechanics": {
+      "name": "机械原理",
+      "category": "03-prof-basic",
+      "path": "03-prof-basic\\principles-of-mechanics"
+    },
+    "surveying": {
+      "name": "测量学",
+      "category": "03-prof-basic",
+      "path": "03-prof-basic\\surveying"
+    }
+  }
+}
