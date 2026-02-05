@@ -24,7 +24,6 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import Wisdom from "./Wisdom"
-import FileUploader from "./FileUploader"
 
 export {
   ArticleTitle,
@@ -53,5 +52,4 @@ export {
   Flex,
   ConditionalRender,
   Wisdom,
-  FileUploader,
 }
