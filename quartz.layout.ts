@@ -78,7 +78,6 @@ export const indexPageLayout: PageLayout = {
   ],
   right: [
     Component.DesktopOnly(Component.Wisdom()),
-    Component.FileUploader(),
     Component.Backlinks(),
   ],
 }
