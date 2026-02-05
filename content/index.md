@@ -1,10 +1,10 @@
 ---
 title: 同舟空间 ⛵
-description: 同济大学课程资料分享站
+description: 课程资料分享站
 ---
 
 > [!abstract] 关于本站
-> **同舟空间 (TongzhouSpace)** 是一个由同济学生自发维护的课程资料分享平台。
+> **同舟空间 (TongzhouSpace)** 是一个由学生自发维护的课程资料分享平台。
 > 所有文件存储于 ModelScope，点击即可直链下载，不仅快，而且**免费**。
 
 ## 🏛️ 基础通识 (Freshman & Sophomore)
@@ -29,7 +29,3 @@ description: 同济大学课程资料分享站
 * **[[99-others/index|📦 99 - 其他资源]]** : 暂未分类或跨学科资料
 
 ---
-
-> [!example] 如何贡献？
-> 直接将整理好的文件夹打包发送给管理员，或提交 Pull Request。
-> 请确保文件名清晰，例如：`2024-期末试卷-A卷.pdf`。
