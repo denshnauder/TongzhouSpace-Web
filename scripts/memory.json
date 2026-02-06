@@ -4,7 +4,8 @@
     "理论力学C": "theoretical-mechanics",
     "机械原理": "principles-of-mechanics",
     "Mechanism and Machine Theory": "principles-of-mechanics",
-    "Theory of Machines and Mechanisms": "principles-of-mechanics"
+    "Theory of Machines and Mechanisms": "principles-of-mechanics",
+    "1-信号拆为奇分量和偶分量唯一性证明.pdf": "signal-and-system"
   },
   "courses": {
     "theoretical-mechanics": {
@@ -21,6 +22,16 @@
       "name": "测量学",
       "category": "03-prof-basic",
       "path": "03-prof-basic\\surveying"
+    },
+    "auto-struture": {
+      "name": "汽车构造",
+      "category": "04-prof-compulsory",
+      "path": "04-prof-compulsory/auto-struture"
+    },
+    "signal-and-system": {
+      "name": "信号与系统",
+      "category": "04-prof-compulsory",
+      "path": "04-prof-compulsory/signal-and-system"
     }
   }
 }

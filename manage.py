@@ -2,8 +2,14 @@
 # -*- coding: utf-8 -*-
 
 """
-TongzhouSpace 全自动整理脚本 (Ultimate Version)
-包含功能：递归解压、图片转PDF、交互分类、ModelScope上传(修正版)、双层页面生成、Git自动推送
+TongzhouSpace 全自动整理脚本 (Smart Edition)
+包含功能：
+1. 递归解压 & 图片转PDF
+2. 智能交互分类 (自动记忆)
+3. 智能资料类型猜测 (新增)
+4. ModelScope上传 & 直链生成
+5. 双层页面自动渲染
+6. Git自动推送
 """
 
 import os
@@ -13,12 +19,11 @@ import zipfile
 import datetime
 import time
 import requests
-import hashlib
 from pathlib import Path
 from PIL import Image
 from dotenv import load_dotenv
 from modelscope.hub.api import HubApi
-from urllib.parse import quote  # 用于处理URL中文编码
+from urllib.parse import quote
 
 # ================= 配置区域 =================
 INBOX_DIR = Path('_inbox')
@@ -27,8 +32,6 @@ MEMORY_FILE = Path('scripts/memory.json')
 RESOURCES_FILE = 'resources.json'
 INDEX_FILE = 'index.md'
 
-# 核心分类结构 (左边是显示名，右边是你在本地的实际英文文件夹名)
-# 已根据你的截图修正，防止生成重复文件夹
 CATEGORY_MAP = {
     "00 - 通识必修": "00-general-compulsory",
     "01 - 通识选修": "01-general-elective",
@@ -40,17 +43,15 @@ CATEGORY_MAP = {
     "99 - 其他资源": "99-others"
 }
 
-# 资料类型 (已修改第5项)
 FILE_TYPES = {
-    "1": "教材 (Textbooks)",
-    "2": "课件 (Slides)",
-    "3": "笔记 (Notes)",
-    "4": "作业 (Assignments)",
-    "5": "期末模拟题 (Mock Exams)",
-    "6": "其他 (Resources)"
+    "1": "教材",
+    "2": "课件",
+    "3": "笔记",
+    "4": "作业",
+    "5": "试卷",
+    "6": "其他"
 }
 
-# 忽略列表
 IGNORE_FILES = ['.DS_Store', 'Thumbs.db', '.gitignore', '.gitkeep']
 # ===========================================
 
@@ -97,6 +98,30 @@ class Memory:
         return None
 
 memory = Memory()
+
+# --- 新增：智能类型猜测 ---
+def smart_guess_type(filename):
+    name = filename.lower()
+    ext = os.path.splitext(name)[1]
+    
+    # 1. 关键词优先
+    if any(k in name for k in ['期末', '期中', '试卷', '试题', 'exam', 'quiz', 'test', '真题', '模拟']):
+        return '5' # 试卷
+    if any(k in name for k in ['作业', '习题', 'homework', 'assignment', 'problem']):
+        return '4' # 作业
+    if any(k in name for k in ['笔记', '总结', 'note', 'summary', 'point']):
+        return '3' # 笔记
+    if any(k in name for k in ['ppt', 'slide', '课件', '讲义', 'presentation']):
+        return '2' # 课件
+    if any(k in name for k in ['教材', '书', 'textbook', 'edition', 'guide']):
+        return '1' # 教材
+        
+    # 2. 后缀兜底
+    if ext in ['.ppt', '.pptx']: return '2'
+    if ext in ['.doc', '.docx', '.md', '.txt']: return '3'
+    
+    # 3. 默认
+    return '6'
 
 # ================= 核心工具函数 =================
 
@@ -148,17 +173,16 @@ def smart_merge_pdf(target_dir):
 # ================= 交互与逻辑 =================
 
 def create_new_course():
-    """新建课程向导"""
     print("\n   🏗️  新建课程归档")
     print("   该课程属于哪个大类？")
     cats = list(CATEGORY_MAP.keys())
     for i, cat in enumerate(cats):
-        print(f"   [{i}] {cat}") # 显示中文名
+        print(f"   [{i}] {cat}")
     
     try:
         c_idx = int(input("   序号: "))
         display_key = cats[c_idx]
-        cat_folder_name = CATEGORY_MAP[display_key] # 获取实际英文文件夹名
+        cat_folder_name = CATEGORY_MAP[display_key]
     except:
         print("   默认归入: 99-others")
         cat_folder_name = "99-others"
@@ -171,7 +195,6 @@ def create_new_course():
     return en_name
 
 def get_course_interaction(file_path):
-    """人机交互：确定课程"""
     filename = file_path.name
     guess_code = memory.guess(filename)
     if guess_code:
@@ -205,27 +228,23 @@ def get_course_interaction(file_path):
     return get_course_interaction(file_path)
 
 def upload_modelscope(file_path, api, repo_id):
-    """上传并校验 (SDK修复版)"""
     print(f"   ☁️  正在上传...")
     try:
         file_name = file_path.name
-        # 修复：使用 SDK 最新标准参数
         api.upload_file(
-            repo_id=repo_id,                # 仓库ID
-            path_or_fileobj=str(file_path), # 本地路径
-            path_in_repo=file_name,         # 云端路径
+            repo_id=repo_id,
+            path_or_fileobj=str(file_path),
+            path_in_repo=file_name,
             revision='master'
         )
         
-        # 修复：URL编码与直链生成
         encoded_name = quote(file_name)
         url = f"https://modelscope.cn/models/{repo_id}/resolve/master/{encoded_name}"
         
-        # 简单校验
         try:
             r = requests.head(url, allow_redirects=True, timeout=5)
             if r.status_code >= 400:
-                print(f"   ⚠️  警告: 链接返回 {r.status_code}，请检查仓库权限。")
+                print(f"   ⚠️  警告: 链接返回 {r.status_code}")
         except: pass
         
         return url
@@ -236,7 +255,6 @@ def upload_modelscope(file_path, api, repo_id):
 # ================= 渲染页面 =================
 
 def update_json_and_render(course_code, type_key, file_name, url, size):
-    """更新资源并渲染课程页(第三级)"""
     info = memory.data['courses'][course_code]
     course_dir = CONTENT_DIR / info['path']
     course_dir.mkdir(parents=True, exist_ok=True)
@@ -265,7 +283,6 @@ def update_json_and_render(course_code, type_key, file_name, url, size):
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
         
-    # 渲染 Markdown (手机友好列表)
     grouped = {}
     for f in data['files']:
         t = f.get('type', '6')
@@ -290,7 +307,6 @@ def update_json_and_render(course_code, type_key, file_name, url, size):
         f.write(md_content)
 
 def render_category_pages():
-    """刷新所有大类目录索引 (第二级)"""
     print("🎨 正在刷新大类目录...")
     for display_name, folder_name in CATEGORY_MAP.items():
         cat_dir = CONTENT_DIR / folder_name
@@ -305,7 +321,6 @@ def render_category_pages():
         else:
             for course_dir in courses:
                 course_cn_name = course_dir.name
-                # 尝试从记忆反查中文名
                 for code, info in memory.data['courses'].items():
                     if info['path'].replace("\\", "/").endswith(f"{folder_name}/{course_dir.name}"):
                         course_cn_name = info['name']
@@ -332,7 +347,6 @@ def main():
         print("❌ 未配置 .env (MODELSCOPE_TOKEN)")
         return
     
-    # 修复：新版SDK登录方式
     api = HubApi()
     api.login(token)
     
@@ -348,15 +362,21 @@ def main():
     files = [f for f in INBOX_DIR.rglob('*') if f.is_file() and f.name not in IGNORE_FILES]
     if not files:
         print("📭 Inbox 是空的。")
-        render_category_pages() # 即使没有新文件也刷新一下索引
+        render_category_pages()
     else:
         for f in files:
             if not f.exists(): continue
             course_code = get_course_interaction(f)
             if not course_code: continue
             
-            print(f"   类型? [1]教材 [2]课件 [3]笔记 [4]作业 [5]模拟题 [6]其他")
-            t_key = input("   (回车默认6): ").strip() or "6"
+            # 【升级】使用智能猜测作为默认值
+            guessed_type = smart_guess_type(f.name)
+            print(f"   类型? [1]教材 [2]课件 [3]笔记 [4]作业 [5]试卷 [6]其他")
+            
+            # 动态显示默认值
+            t_key = input(f"   (回车默认[{guessed_type} {FILE_TYPES[guessed_type]}]): ").strip()
+            if not t_key:
+                t_key = guessed_type
             
             mem_key = input("   💡 记住关键词? (回车跳过): ").strip()
             if mem_key: memory.add_keyword(mem_key, course_code)
@@ -367,16 +387,13 @@ def main():
                 f.unlink()
                 print("   ✅ 完成，本地已删")
 
-        # 清理空目录
         for d in INBOX_DIR.iterdir():
             if d.is_dir() and not any(d.iterdir()):
                 shutil.rmtree(d)
         
         render_category_pages()
 
-    # Git 自动推送 (兼容 PowerShell)
     print("\n🚀 正在自动推送到 GitHub...")
-    # 分步执行，不使用 &&
     if os.system("git add .") == 0:
         if os.system('git commit -m "Auto-update by manage.py"') == 0:
             os.system("git push")
