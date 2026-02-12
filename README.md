@@ -1,73 +1,9 @@
-# 🌊 同舟空间 (Tongzhou Space)
+“同舟空间”是一个由同济大学学生维护的校内教学资源共享平台，主要用于整理和分享教材、课件、笔记、试卷等学习资料。
 
-> **同舟共济，资源共享。** 
-> 这是一个由同济学子自发维护的校内教学资源共享站。
+从技术实现上看，它是一个静态网站 + 自动化脚本的组合：
 
-🔗 **访问地址**：[https://tongzhou-space.vercel.app](https://tongzhou-space.vercel.app)
+前端展示：基于 Quartz 4 框架，将 Markdown 文档渲染成网页，界面简洁，支持双链笔记风格。
 
----
+后端存储：利用 ModelScope 社区 的对象存储能力来托管 PDF、ZIP 等大文件，解决静态网站容量限制问题。
 
-## 🚀 项目愿景
-旨在解决校内资料获取门槛高、分布零散的问题。我们主要利用 **Quartz 4** 框架，打造一个高效、整洁、易于维护的资料归档系统。
-
-## ✨ 核心特色
-- **全自动归档**：利用脚本清洗命名、补齐索引，告别手动整理。
-- **跨校资源同步**：定期同步名校优质公开资源。
-- **大文件支持**：集成 ModelScope 托管大体积压缩包与 PDF。
-- **极简维护**：采用“文件夹笔记”模式，即开即用。
-
-## 🛠️ 开发者工具箱
-仓库根目录包含以下自动化维护脚本：
-- `tools.py`: **统一工具管理脚本**，提供一致的命令行接口管理所有工具。
-- `sync.py`: 外部资源一键抓取，支持并行处理和配置文件。
-- `md_to_folder.py`: 修复 Quartz 404 路径问题，支持命令行参数。
-- `auto_index.py`: 自动生成目录导航，支持命令行参数。
-- `upload_to_oss.py`: 大文件上云并生成下载直链，支持命令行参数。
-
-### 使用方法
-
-**统一工具管理（推荐）：**
-```bash
-# 查看帮助
-python tools.py --help
-
-# 自动补全索引
-python tools.py index --content-dir content --verbose
-
-# Markdown 文件转文件夹
-python tools.py md2folder --content-dir content --verbose
-
-# 同步外部资源
-python tools.py sync --config sync_config.yaml --verbose --parallel
-
-# 上传大文件
-python tools.py upload --file "G:\工程热力学.zip" --verbose
-```
-
-**单个脚本使用：**
-```bash
-# 自动补全索引
-python auto_index.py --content-dir content --verbose
-
-# Markdown 文件转文件夹
-python md_to_folder.py --content-dir content --verbose
-
-# 同步外部资源
-python sync.py --config sync_config.yaml --verbose --parallel
-
-# 上传大文件
-python upload_to_oss.py --file "G:\工程热力学.zip" --verbose
-```
-
-## 🤝 如何参与贡献？
-我们非常欢迎你加入！你可以：
-1. **通过 Issue 贡献**：直接将资料拖入 [GitHub Issues](https://github.com/denshnauder/TongzhouSpace/issues)。
-2. **通过 PR 贡献**：Fork 本仓库，整理资料后发起 Pull Request。
-
-具体细节请参阅：[📖 资源贡献指南](https://tongzhou-space.vercel.app/contribution-guide)
-
-## ⚖️ 免责声明
-本仓库所有资料均来源于互联网公开渠道或用户分享，仅供学术交流与学习参考，严禁用于任何商业用途。相关版权归原作者或机构所有，若有侵权请通过 GitHub Issue 联系删除。
-
----
-**Created with ❤️ by DenShnauder**
+自动化维护：通过 Python 脚本（manage.py 和 smart_sync.py）实现了从“本地文件投喂”到“云端上传”、“自动分类”再到“网站索引更新”的全流程自动化，极大降低了维护成本。
