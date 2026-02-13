@@ -41,7 +41,7 @@
     "linear-algebra": {
       "name": "线性代数B",
       "category": "02-public-basic",
-      "path": "02-public-basic/linear-algebra"
+      "path": "02-public-basic/linear-algebraB"
     },
     "general-chemistry": {
       "name": "普通化学",
@@ -60,8 +60,8 @@
     },
     "auto-theory": {
       "name": "汽车理论",
-      "category": "00-general-compulsory",
-      "path": "00-general-compulsory/auto-theory"
+      "category": "04-prof-compulsory",
+      "path": "04-prof-compulsory/auto-theory"
     },
     "engineering-mechanics": {
       "name": "工程力学",
@@ -92,6 +92,21 @@
       "name": "房地产开发与管理",
       "category": "04-prof-compulsory",
       "path": "04-prof-compulsory/real-estate-development-and-management"
+    },
+    "engineering-materials": {
+      "name": "工程材料",
+      "category": "03-prof-basic",
+      "path": "03-prof-basic/engineering-materials"
+    },
+    "complex-functions-and-integral-transforms": {
+      "name": "复变函数与积分变换",
+      "category": "02-public-basic",
+      "path": "02-public-basic/complex-functions-and-integral-transforms"
+    },
+    "Situation-and-Policy": {
+      "name": "形势与政策",
+      "category": "00-general-compulsory",
+      "path": "00-general-compulsory/situation-and-policy"
     }
   }
 }
