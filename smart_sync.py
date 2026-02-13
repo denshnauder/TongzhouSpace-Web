@@ -2,11 +2,10 @@
 # -*- coding: utf-8 -*-
 
 """
-TongzhouSpace 存量链接回收工具 (Final Fix Edition v2.4)
+TongzhouSpace 存量链接回收工具 (Final Fix Edition v2.5)
 解决痛点：
-1. 自动标准化路径分隔符 (修复文件夹分裂问题)。
-2. ModelScope 无法删除时，支持"本地拉黑" (Blacklist)，眼不见为净。
-3. 保持 v2.3 的全量排序和预检功能。
+1. 修复类型错误：兼容传入字符串类型的 size (如 "4.9MB")。
+2. 保持路径标准化和黑名单功能。
 """
 
 import os
@@ -20,7 +19,7 @@ from modelscope.hub.api import HubApi
 # ================= 配置 =================
 CONTENT_DIR = Path('content')
 MEMORY_FILE = Path('scripts/memory.json')
-BLACKLIST_FILE = Path('scripts/blacklist.json') # 新增：僵尸名单
+BLACKLIST_FILE = Path('scripts/blacklist.json') 
 RESOURCES_FILE = 'resources.json'
 INDEX_FILE = 'index.md'
 
@@ -57,7 +56,6 @@ class Memory:
                     data = json.load(f)
             except: pass
         
-        # --- 自动修复：强行纠正所有反斜杠 ---
         dirty = False
         for code, info in data['courses'].items():
             if '\\' in info['path']:
@@ -78,7 +76,6 @@ class Memory:
         self._save_direct(self.data)
 
     def register_course(self, standard_name, display_name, category_folder):
-        # 强制使用正斜杠
         clean_path = f"{category_folder}/{standard_name}"
         self.data['courses'][standard_name] = {
             "name": display_name,
@@ -108,7 +105,6 @@ class Memory:
 
 memory = Memory()
 
-# --- 新增：黑名单管理 ---
 def load_blacklist():
     if BLACKLIST_FILE.exists():
         try:
@@ -152,7 +148,8 @@ def create_new_course_interactive():
 def render_index_md(course_dir, course_name, data):
     grouped = {}
     for f in data['files']:
-        t = f.get('type', '6')
+        # 确保 type 是字符串，防止 int 导致的 key error
+        t = str(f.get('type', '6'))
         if t not in grouped: grouped[t] = []
         grouped[t].append(f)
         
@@ -185,15 +182,25 @@ def update_local_json_and_render(course_dir, name, url, size, file_type):
     for item in data['files']:
         if item['url'] == url: return False
 
-    size_str = f"{size}B"
-    if size > 1024*1024: size_str = f"{size/1024/1024:.1f}MB"
-    elif size > 1024: size_str = f"{size/1024:.1f}KB"
+    # === 关键修正：类型兼容 ===
+    if isinstance(size, str):
+        size_str = size  # 已经是字符串 (如 "4.9MB")，直接用
+    else:
+        # 是数字，进行格式化
+        try:
+            size_val = float(size)
+            size_str = f"{int(size_val)}B"
+            if size_val > 1024*1024: size_str = f"{size_val/1024/1024:.1f}MB"
+            elif size_val > 1024: size_str = f"{size_val/1024:.1f}KB"
+        except:
+            size_str = str(size) # 兜底
+    # ========================
 
     new_entry = {
         "name": name,
         "url": url,
         "size": size_str,
-        "type": file_type,
+        "type": str(file_type),
         "date": datetime.date.today().strftime("%Y-%m-%d")
     }
     data['files'].append(new_entry)
@@ -256,12 +263,10 @@ def smart_sync():
         cloud_path = file_info['Path']
         file_name = cloud_path.split('/')[-1]
         
-        # 1. 检查黑名单
         if cloud_path in blacklist:
             skipped_count += 1
             continue
 
-        # 2. 检查已存在
         encoded_path = quote(cloud_path)
         current_url = f"https://modelscope.cn/models/{repo_id}/resolve/master/{encoded_path}"
         if current_url in existing_urls:
@@ -307,7 +312,6 @@ def smart_sync():
             
             c = input("   指派: ").strip().lower()
             if c == 'd':
-                # --- 修改：尝试删除，失败则拉黑 ---
                 try:
                     print("   🗑️  尝试云端删除...")
                     api.delete_file(path=cloud_path, model_id=repo_id, revision='master', commit_message=f"Del: {file_name}")
@@ -353,7 +357,6 @@ def smart_sync():
                     break
                     
                 elif op == 'd':
-                    # --- 修改：尝试删除，失败则拉黑 ---
                     try:
                         print("   🗑️  尝试云端删除...")
                         api.delete_file(path=cloud_path, model_id=repo_id, revision='master', commit_message=f"Del: {file_name}")
