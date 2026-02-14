@@ -2,8 +2,6 @@
 title: 机械原理
 ---
 
-# 机械原理
-
 ## 教材
 - 📕 **KINEMATICS AND DYNAMICS OF MACHINERY THIRD EDITION (Charles E. Wilson, J. Peter Sadler etc.) (Z-Library).pdf** <small>(122.5MB)</small> [☁️ 点击下载](https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/KINEMATICS%20AND%20DYNAMICS%20OF%20MACHINERY%20THIRD%20EDITION%20%28Charles%20E.%20Wilson%2C%20J.%20Peter%20Sadler%20etc.%29%20%28Z-Library%29.pdf)
 - 📕 **Mechanism and Machine Theory (Ashok G. Ambekar) (Z-Library).pdf** <small>(29.5MB)</small> [☁️ 点击下载](https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/Mechanism%20and%20Machine%20Theory%20%28Ashok%20G.%20Ambekar%29%20%28Z-Library%29.pdf)

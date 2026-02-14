@@ -2,8 +2,6 @@
 title: 工程力学
 ---
 
-# 工程力学
-
 ## 试卷
 - 📕 **2007-2008学年.pdf** <small>(470.2KB)</small> [☁️ 点击下载](https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/03-prof-basic/engineering-mechanics/exams/2007-2008%E5%AD%A6%E5%B9%B4.pdf)
 - 📕 **2008-2009学年第一学期.pdf** <small>(434.7KB)</small> [☁️ 点击下载](https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/03-prof-basic/engineering-mechanics/exams/2008-2009%E5%AD%A6%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F.pdf)

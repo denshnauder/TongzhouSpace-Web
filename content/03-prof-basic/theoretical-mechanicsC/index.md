@@ -2,15 +2,13 @@
 title: 理论力学C
 ---
 
-# 理论力学C
-
 ## 教材
 - 📕 **刚体运动的向量-矩阵描述 (拓展材料)-选自清华理论力学教材.pdf** <small>(631.5KB)</small> [☁️ 点击下载](https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/%E5%88%9A%E4%BD%93%E8%BF%90%E5%8A%A8%E7%9A%84%E5%90%91%E9%87%8F-%E7%9F%A9%E9%98%B5%E6%8F%8F%E8%BF%B0%20%28%E6%8B%93%E5%B1%95%E6%9D%90%E6%96%99%29-%E9%80%89%E8%87%AA%E6%B8%85%E5%8D%8E%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6%E6%95%99%E6%9D%90.pdf)
 ## 课件
+- 📕 **动力学4-动能定理.pdf** <small>(1.2MB)</small> [☁️ 点击下载](https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/%E5%8A%A8%E5%8A%9B%E5%AD%A64-%E5%8A%A8%E8%83%BD%E5%AE%9A%E7%90%86.pdf)
+- 📕 **动力学5-达朗贝尔原理.pdf** <small>(1003.9KB)</small> [☁️ 点击下载](https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/%E5%8A%A8%E5%8A%9B%E5%AD%A65-%E8%BE%BE%E6%9C%97%E8%B4%9D%E5%B0%94%E5%8E%9F%E7%90%86.pdf)
 - 📕 **动力学-1 质点动力学.pdf** <small>(634.6KB)</small> [☁️ 点击下载](https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/%E5%8A%A8%E5%8A%9B%E5%AD%A6-1%20%E8%B4%A8%E7%82%B9%E5%8A%A8%E5%8A%9B%E5%AD%A6.pdf)
 - 📕 **动力学-2 动量定理.pdf** <small>(2.0MB)</small> [☁️ 点击下载](https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/%E5%8A%A8%E5%8A%9B%E5%AD%A6-2%20%E5%8A%A8%E9%87%8F%E5%AE%9A%E7%90%86.pdf)
 - 📕 **动力学-3 动量矩定理.pdf** <small>(2.4MB)</small> [☁️ 点击下载](https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/%E5%8A%A8%E5%8A%9B%E5%AD%A6-3%20%E5%8A%A8%E9%87%8F%E7%9F%A9%E5%AE%9A%E7%90%86.pdf)
-- 📕 **动力学4-动能定理.pdf** <small>(1.2MB)</small> [☁️ 点击下载](https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/%E5%8A%A8%E5%8A%9B%E5%AD%A64-%E5%8A%A8%E8%83%BD%E5%AE%9A%E7%90%86.pdf)
-- 📕 **动力学5-达朗贝尔原理.pdf** <small>(1003.9KB)</small> [☁️ 点击下载](https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/%E5%8A%A8%E5%8A%9B%E5%AD%A65-%E8%BE%BE%E6%9C%97%E8%B4%9D%E5%B0%94%E5%8E%9F%E7%90%86.pdf)
 - 📕 **运动学 运动学总结.pdf** <small>(978.9KB)</small> [☁️ 点击下载](https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/%E8%BF%90%E5%8A%A8%E5%AD%A6%20%E8%BF%90%E5%8A%A8%E5%AD%A6%E6%80%BB%E7%BB%93.pdf)
 - 📕 **运动学补充内容.pdf** <small>(1.4MB)</small> [☁️ 点击下载](https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/%E8%BF%90%E5%8A%A8%E5%AD%A6%E8%A1%A5%E5%85%85%E5%86%85%E5%AE%B9.pdf)

@@ -1,18 +1,25 @@
 {
   "files": [
     {
-      "name": "14950959.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/14950959.pdf",
-      "size": "64.5MB",
-      "type": "6",
-      "date": "2026-02-12"
+      "name": "3 汽车发动机及零部件的新发展与趋势.zip",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/3/3%20%E6%B1%BD%E8%BD%A6%E5%8F%91%E5%8A%A8%E6%9C%BA%E5%8F%8A%E9%9B%B6%E9%83%A8%E4%BB%B6%E7%9A%84%E6%96%B0%E5%8F%91%E5%B1%95%E4%B8%8E%E8%B6%8B%E5%8A%BF.zip",
+      "size": "38.9MB",
+      "type": "4",
+      "date": "2026-02-14"
     },
     {
-      "name": "14950960.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/14950960.pdf",
-      "size": "200.1MB",
-      "type": "6",
-      "date": "2026-02-12"
+      "name": "4挑战与未来趋势.docx",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/7/4%E6%8C%91%E6%88%98%E4%B8%8E%E6%9C%AA%E6%9D%A5%E8%B6%8B%E5%8A%BF.docx",
+      "size": "341.5KB",
+      "type": "4",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "7.第二部分.docx",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/7/7.%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86.docx",
+      "size": "324.3KB",
+      "type": "4",
+      "date": "2026-02-14"
     },
     {
       "name": "2020年汽车构造试卷（上下册）.doc",
@@ -176,25 +183,18 @@
       "date": "2026-02-14"
     },
     {
-      "name": "3 汽车发动机及零部件的新发展与趋势.zip",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/3/3%20%E6%B1%BD%E8%BD%A6%E5%8F%91%E5%8A%A8%E6%9C%BA%E5%8F%8A%E9%9B%B6%E9%83%A8%E4%BB%B6%E7%9A%84%E6%96%B0%E5%8F%91%E5%B1%95%E4%B8%8E%E8%B6%8B%E5%8A%BF.zip",
-      "size": "38.9MB",
-      "type": "4",
-      "date": "2026-02-14"
+      "name": "14950959.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/14950959.pdf",
+      "size": "64.5MB",
+      "type": "6",
+      "date": "2026-02-12"
     },
     {
-      "name": "4挑战与未来趋势.docx",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/7/4%E6%8C%91%E6%88%98%E4%B8%8E%E6%9C%AA%E6%9D%A5%E8%B6%8B%E5%8A%BF.docx",
-      "size": "341.5KB",
-      "type": "4",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "7.第二部分.docx",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/7/7.%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86.docx",
-      "size": "324.3KB",
-      "type": "4",
-      "date": "2026-02-14"
+      "name": "14950960.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/14950960.pdf",
+      "size": "200.1MB",
+      "type": "6",
+      "date": "2026-02-12"
     },
     {
       "name": "B2E8翻译.docx",
@@ -208,6 +208,20 @@
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98ppt/%E5%BA%95%E7%9B%98%E6%95%B4%E7%90%86/CH21%E8%BD%A6%E6%A1%A5%E5%92%8C%E8%BD%A6%E8%BD%AE.png",
       "size": "3.9MB",
       "type": "6",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Chaper 1-Overall Structure.ppt",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chaper%201-Overall%20Structure.ppt",
+      "size": "5.3MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Chapter 1-Overall Structure.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/pdf/Chapter%201-Overall%20Structure.pdf",
+      "size": "6.4MB",
+      "type": "2",
       "date": "2026-02-14"
     },
     {
@@ -239,6 +253,34 @@
       "date": "2026-02-14"
     },
     {
+      "name": "Chapter 2－crank shaft and connecting rod.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%202%EF%BC%8Dcrank%20shaft%20and%20connecting%20rod.pdf",
+      "size": "4.9MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Chapter 2－crank shaft and connecting rod.pptx",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%202%EF%BC%8Dcrank%20shaft%20and%20connecting%20rod.pptx",
+      "size": "5.4MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Chapter 3- Valve Train-2023.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%203-%20Valve%20Train-2023.pdf",
+      "size": "4.7MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Chapter 3- Valve Train-2023.pptx",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%203-%20Valve%20Train-2023.pptx",
+      "size": "4.5MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
       "name": "CHAPTER 3.pdf",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/pdf/old/CHAPTER%203.pdf",
       "size": "10.6MB",
@@ -253,16 +295,100 @@
       "date": "2026-02-14"
     },
     {
-      "name": "Chaper 1-Overall Structure.ppt",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chaper%201-Overall%20Structure.ppt",
-      "size": "5.3MB",
+      "name": "Chapter 4- Fule Supply System for Gasoline Engine.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%204-%20Fule%20Supply%20System%20for%20Gasoline%20Engine.pdf",
+      "size": "8.9MB",
       "type": "2",
       "date": "2026-02-14"
     },
     {
-      "name": "Chapter 1-Overall Structure.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/pdf/Chapter%201-Overall%20Structure.pdf",
-      "size": "6.4MB",
+      "name": "Chapter 4- Fule Supply System for Gasoline Engine.pptx",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%204-%20Fule%20Supply%20System%20for%20Gasoline%20Engine.pptx",
+      "size": "9.8MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Chapter 5－Fuel supply system for diesel engine - 胡宗杰 - 20240326.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%205%EF%BC%8DFuel%20supply%20system%20for%20diesel%20engine%20-%20%E8%83%A1%E5%AE%97%E6%9D%B0%20-%2020240326.pdf",
+      "size": "4.9MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Chapter 5－Fuel supply system for diesel engine - 胡宗杰 - 20240326.ppt",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%205%EF%BC%8DFuel%20supply%20system%20for%20diesel%20engine%20-%20%E8%83%A1%E5%AE%97%E6%9D%B0%20-%2020240326.ppt",
+      "size": "6.3MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Chapter 5－Fuel supply systme for diesel engine.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%205%EF%BC%8DFuel%20supply%20systme%20for%20diesel%20engine.pdf",
+      "size": "9.6MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Chapter 5－Fuel supply systme for diesel engine.ppt",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%205%EF%BC%8DFuel%20supply%20systme%20for%20diesel%20engine.ppt",
+      "size": "8.4MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Chapter 6-Intake-exhaust-boost systems.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%206-Intake-exhaust-boost%20systems.pdf",
+      "size": "7.2MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Chapter 6-Intake-exhaust-boost systems.pptx",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%206-Intake-exhaust-boost%20systems.pptx",
+      "size": "4.3MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Chapter 7-Cooling System.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%207-Cooling%20System.pdf",
+      "size": "2.9MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Chapter 7-Cooling System.pptx",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%207-Cooling%20System.pptx",
+      "size": "2.8MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Chapter 8-Lubrication System - HU - 2023.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%208-Lubrication%20System%20-%20HU%20-%202023.pdf",
+      "size": "2.8MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Chapter 8-Lubrication System - HU - 2023.ppt",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%208-Lubrication%20System%20-%20HU%20-%202023.ppt",
+      "size": "4.9MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Chapter 9 - Starting System - HU - 2023.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%209%20-%20Starting%20System%20-%20HU%20-%202023.pdf",
+      "size": "1.4MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Chapter 9 - Starting System - HU - 2023.ppt",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%209%20-%20Starting%20System%20-%20HU%20-%202023.ppt",
+      "size": "2.5MB",
       "type": "2",
       "date": "2026-02-14"
     },
@@ -400,132 +526,6 @@
       "date": "2026-02-14"
     },
     {
-      "name": "Chapter 2－crank shaft and connecting rod.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%202%EF%BC%8Dcrank%20shaft%20and%20connecting%20rod.pdf",
-      "size": "4.9MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 2－crank shaft and connecting rod.pptx",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%202%EF%BC%8Dcrank%20shaft%20and%20connecting%20rod.pptx",
-      "size": "5.4MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 3- Valve Train-2023.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%203-%20Valve%20Train-2023.pdf",
-      "size": "4.7MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 3- Valve Train-2023.pptx",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%203-%20Valve%20Train-2023.pptx",
-      "size": "4.5MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 4- Fule Supply System for Gasoline Engine.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%204-%20Fule%20Supply%20System%20for%20Gasoline%20Engine.pdf",
-      "size": "8.9MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 4- Fule Supply System for Gasoline Engine.pptx",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%204-%20Fule%20Supply%20System%20for%20Gasoline%20Engine.pptx",
-      "size": "9.8MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 5－Fuel supply system for diesel engine - 胡宗杰 - 20240326.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%205%EF%BC%8DFuel%20supply%20system%20for%20diesel%20engine%20-%20%E8%83%A1%E5%AE%97%E6%9D%B0%20-%2020240326.pdf",
-      "size": "4.9MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 5－Fuel supply system for diesel engine - 胡宗杰 - 20240326.ppt",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%205%EF%BC%8DFuel%20supply%20system%20for%20diesel%20engine%20-%20%E8%83%A1%E5%AE%97%E6%9D%B0%20-%2020240326.ppt",
-      "size": "6.3MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 5－Fuel supply systme for diesel engine.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%205%EF%BC%8DFuel%20supply%20systme%20for%20diesel%20engine.pdf",
-      "size": "9.6MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 5－Fuel supply systme for diesel engine.ppt",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%205%EF%BC%8DFuel%20supply%20systme%20for%20diesel%20engine.ppt",
-      "size": "8.4MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 6-Intake-exhaust-boost systems.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%206-Intake-exhaust-boost%20systems.pdf",
-      "size": "7.2MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 6-Intake-exhaust-boost systems.pptx",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%206-Intake-exhaust-boost%20systems.pptx",
-      "size": "4.3MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 7-Cooling System.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%207-Cooling%20System.pdf",
-      "size": "2.9MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 7-Cooling System.pptx",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%207-Cooling%20System.pptx",
-      "size": "2.8MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 8-Lubrication System - HU - 2023.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%208-Lubrication%20System%20-%20HU%20-%202023.pdf",
-      "size": "2.8MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 8-Lubrication System - HU - 2023.ppt",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%208-Lubrication%20System%20-%20HU%20-%202023.ppt",
-      "size": "4.9MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 9 - Starting System - HU - 2023.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%209%20-%20Starting%20System%20-%20HU%20-%202023.pdf",
-      "size": "1.4MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 9 - Starting System - HU - 2023.ppt",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%209%20-%20Starting%20System%20-%20HU%20-%202023.ppt",
-      "size": "2.5MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
       "name": "DAM-发动机构造认知考试-2023-题目.docx",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%8F%91%E5%8A%A8%E6%9C%BA--%E8%B5%84%E6%96%99/DAM-%E5%8F%91%E5%8A%A8%E6%9C%BA%E6%9E%84%E9%80%A0%E8%AE%A4%E7%9F%A5%E8%80%83%E8%AF%95-2023-%E9%A2%98%E7%9B%AE.docx",
       "size": "472.9KB",
@@ -631,17 +631,17 @@
       "date": "2026-02-14"
     },
     {
-      "name": "发动机.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%8F%91%E5%8A%A8%E6%9C%BA.pdf",
-      "size": "664.1KB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
       "name": "发动机2023.doc",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%8F%91%E5%8A%A8%E6%9C%BA--%E8%B5%84%E6%96%99/%E8%AF%95%E5%8D%B7%E5%8F%8A%E7%AD%94%E6%A1%88%281%29/%E5%8F%91%E5%8A%A8%E6%9C%BA2023.doc",
       "size": "916.0KB",
       "type": "5",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "发动机.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%8F%91%E5%8A%A8%E6%9C%BA.pdf",
+      "size": "664.1KB",
+      "type": "2",
       "date": "2026-02-14"
     },
     {
@@ -729,17 +729,17 @@
       "date": "2026-02-14"
     },
     {
-      "name": "底盘.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/chassis/exams/%E5%BA%95%E7%9B%98.pdf",
-      "size": "635.5KB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
       "name": "底盘2023.docx",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98--%E8%B5%84%E6%96%99/%E5%8D%B7/%E5%BA%95%E7%9B%982023.docx",
       "size": "869.1KB",
       "type": "5",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "底盘.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/chassis/exams/%E5%BA%95%E7%9B%98.pdf",
+      "size": "635.5KB",
+      "type": "2",
       "date": "2026-02-14"
     },
     {
@@ -806,6 +806,13 @@
       "date": "2026-02-14"
     },
     {
+      "name": "汽车发动机及零部件的新发展与趋势1.docx",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/3/%E6%B1%BD%E8%BD%A6%E5%8F%91%E5%8A%A8%E6%9C%BA%E5%8F%8A%E9%9B%B6%E9%83%A8%E4%BB%B6%E7%9A%84%E6%96%B0%E5%8F%91%E5%B1%95%E4%B8%8E%E8%B6%8B%E5%8A%BF1.docx",
+      "size": "1.0MB",
+      "type": "4",
+      "date": "2026-02-14"
+    },
+    {
       "name": "汽车发动机及零部件的新发展与趋势.docx",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/3/%E6%B1%BD%E8%BD%A6%E5%8F%91%E5%8A%A8%E6%9C%BA%E5%8F%8A%E9%9B%B6%E9%83%A8%E4%BB%B6%E7%9A%84%E6%96%B0%E5%8F%91%E5%B1%95%E4%B8%8E%E8%B6%8B%E5%8A%BF.docx",
       "size": "1.1MB",
@@ -816,13 +823,6 @@
       "name": "汽车发动机及零部件的新发展与趋势.pdf",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/3/3%20%E6%B1%BD%E8%BD%A6%E5%8F%91%E5%8A%A8%E6%9C%BA%E5%8F%8A%E9%9B%B6%E9%83%A8%E4%BB%B6%E7%9A%84%E6%96%B0%E5%8F%91%E5%B1%95%E4%B8%8E%E8%B6%8B%E5%8A%BF/3%20%E6%B1%BD%E8%BD%A6%E5%8F%91%E5%8A%A8%E6%9C%BA%E5%8F%8A%E9%9B%B6%E9%83%A8%E4%BB%B6%E7%9A%84%E6%96%B0%E5%8F%91%E5%B1%95%E4%B8%8E%E8%B6%8B%E5%8A%BF/%E6%B1%BD%E8%BD%A6%E5%8F%91%E5%8A%A8%E6%9C%BA%E5%8F%8A%E9%9B%B6%E9%83%A8%E4%BB%B6%E7%9A%84%E6%96%B0%E5%8F%91%E5%B1%95%E4%B8%8E%E8%B6%8B%E5%8A%BF.pdf",
       "size": "1.4MB",
-      "type": "4",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "汽车发动机及零部件的新发展与趋势1.docx",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/3/%E6%B1%BD%E8%BD%A6%E5%8F%91%E5%8A%A8%E6%9C%BA%E5%8F%8A%E9%9B%B6%E9%83%A8%E4%BB%B6%E7%9A%84%E6%96%B0%E5%8F%91%E5%B1%95%E4%B8%8E%E8%B6%8B%E5%8A%BF1.docx",
-      "size": "1.0MB",
       "type": "4",
       "date": "2026-02-14"
     },

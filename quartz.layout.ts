@@ -23,7 +23,6 @@ export const defaultContentPageLayout: PageLayout = {
       condition: (page) => page.fileData.slug !== "index",
     }),
     Component.ArticleTitle(),
-    Component.ContentMeta(),
     Component.TagList(),
   ],
   left: [
@@ -55,7 +54,6 @@ export const defaultContentPageLayout: PageLayout = {
 export const indexPageLayout: PageLayout = {
   beforeBody: [
     Component.ArticleTitle(),
-    Component.ContentMeta(),
     Component.TagList(),
   ],
   left: [
@@ -88,8 +86,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.Breadcrumbs({
         rootName: "同舟空间",
       }), 
-    Component.ArticleTitle(), 
-    Component.ContentMeta()],
+    Component.ArticleTitle()],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),

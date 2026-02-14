@@ -8,6 +8,20 @@
       "date": "2026-02-05"
     },
     {
+      "name": "动力学4-动能定理.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/%E5%8A%A8%E5%8A%9B%E5%AD%A64-%E5%8A%A8%E8%83%BD%E5%AE%9A%E7%90%86.pdf",
+      "size": "1.2MB",
+      "type": "2",
+      "date": "2026-02-05"
+    },
+    {
+      "name": "动力学5-达朗贝尔原理.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/%E5%8A%A8%E5%8A%9B%E5%AD%A65-%E8%BE%BE%E6%9C%97%E8%B4%9D%E5%B0%94%E5%8E%9F%E7%90%86.pdf",
+      "size": "1003.9KB",
+      "type": "2",
+      "date": "2026-02-05"
+    },
+    {
       "name": "动力学-1 质点动力学.pdf",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/%E5%8A%A8%E5%8A%9B%E5%AD%A6-1%20%E8%B4%A8%E7%82%B9%E5%8A%A8%E5%8A%9B%E5%AD%A6.pdf",
       "size": "634.6KB",
@@ -25,20 +39,6 @@
       "name": "动力学-3 动量矩定理.pdf",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/%E5%8A%A8%E5%8A%9B%E5%AD%A6-3%20%E5%8A%A8%E9%87%8F%E7%9F%A9%E5%AE%9A%E7%90%86.pdf",
       "size": "2.4MB",
-      "type": "2",
-      "date": "2026-02-05"
-    },
-    {
-      "name": "动力学4-动能定理.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/%E5%8A%A8%E5%8A%9B%E5%AD%A64-%E5%8A%A8%E8%83%BD%E5%AE%9A%E7%90%86.pdf",
-      "size": "1.2MB",
-      "type": "2",
-      "date": "2026-02-05"
-    },
-    {
-      "name": "动力学5-达朗贝尔原理.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/%E5%8A%A8%E5%8A%9B%E5%AD%A65-%E8%BE%BE%E6%9C%97%E8%B4%9D%E5%B0%94%E5%8E%9F%E7%90%86.pdf",
-      "size": "1003.9KB",
       "type": "2",
       "date": "2026-02-05"
     },
