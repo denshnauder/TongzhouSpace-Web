@@ -1,20 +1,6 @@
 {
   "files": [
     {
-      "name": "Chapter 10-Ignition System - HU - 2023.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%2010-Ignition%20System%20-%20HU%20-%202023.pdf",
-      "size": "2.8MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": " 汽车发动机及零部件的新发展与趋势.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/3/%20%E6%B1%BD%E8%BD%A6%E5%8F%91%E5%8A%A8%E6%9C%BA%E5%8F%8A%E9%9B%B6%E9%83%A8%E4%BB%B6%E7%9A%84%E6%96%B0%E5%8F%91%E5%B1%95%E4%B8%8E%E8%B6%8B%E5%8A%BF.pdf",
-      "size": "1.4MB",
-      "type": "4",
-      "date": "Cloud-Sync"
-    },
-    {
       "name": "14950959.pdf",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/14950959.pdf",
       "size": "64.5MB",
@@ -29,23 +15,9 @@
       "date": "2026-02-12"
     },
     {
-      "name": "2020年汽车构造试卷（上下册）(1).doc",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98--%E8%B5%84%E6%96%99/%E7%AD%94%E6%A1%88/2020%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E8%AF%95%E5%8D%B7%EF%BC%88%E4%B8%8A%E4%B8%8B%E5%86%8C%EF%BC%89%281%29.doc",
-      "size": "299.2KB",
-      "type": "5",
-      "date": "2026-02-12"
-    },
-    {
       "name": "2020年汽车构造试卷（上下册）.doc",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98--%E8%B5%84%E6%96%99/%E5%8D%B7/2020%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E8%AF%95%E5%8D%B7%EF%BC%88%E4%B8%8A%E4%B8%8B%E5%86%8C%EF%BC%89.doc",
       "size": "88.1KB",
-      "type": "5",
-      "date": "2026-02-12"
-    },
-    {
-      "name": "2020年汽车构造试卷（上下册）.doc",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%8F%91%E5%8A%A8%E6%9C%BA--%E8%B5%84%E6%96%99/%E8%AF%95%E5%8D%B7%E5%8F%8A%E7%AD%94%E6%A1%88%281%29/2020%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E8%AF%95%E5%8D%B7%EF%BC%88%E4%B8%8A%E4%B8%8B%E5%86%8C%EF%BC%89.doc",
-      "size": "981.9KB",
       "type": "5",
       "date": "2026-02-12"
     },
@@ -57,23 +29,9 @@
       "date": "2026-02-12"
     },
     {
-      "name": "2021年汽车构造线下补考试卷-B卷-上下册各50分 - 空白卷(1).doc",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98--%E8%B5%84%E6%96%99/%E7%AD%94%E6%A1%88/2021%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E7%BA%BF%E4%B8%8B%E8%A1%A5%E8%80%83%E8%AF%95%E5%8D%B7-B%E5%8D%B7-%E4%B8%8A%E4%B8%8B%E5%86%8C%E5%90%8450%E5%88%86%20-%20%E7%A9%BA%E7%99%BD%E5%8D%B7%281%29.doc",
-      "size": "1.1MB",
-      "type": "5",
-      "date": "2026-02-12"
-    },
-    {
       "name": "2021年汽车构造线下补考试卷-B卷-上下册各50分 - 空白卷.doc",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98--%E8%B5%84%E6%96%99/%E5%8D%B7/2021%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E7%BA%BF%E4%B8%8B%E8%A1%A5%E8%80%83%E8%AF%95%E5%8D%B7-B%E5%8D%B7-%E4%B8%8A%E4%B8%8B%E5%86%8C%E5%90%8450%E5%88%86%20-%20%E7%A9%BA%E7%99%BD%E5%8D%B7.doc",
       "size": "769.6KB",
-      "type": "5",
-      "date": "2026-02-12"
-    },
-    {
-      "name": "2021年汽车构造线下补考试卷-B卷-上下册各50分 - 空白卷.doc",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%8F%91%E5%8A%A8%E6%9C%BA--%E8%B5%84%E6%96%99/%E8%AF%95%E5%8D%B7%E5%8F%8A%E7%AD%94%E6%A1%88%281%29/2020-2021/B%E5%8D%B7/2021%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E7%BA%BF%E4%B8%8B%E8%A1%A5%E8%80%83%E8%AF%95%E5%8D%B7-B%E5%8D%B7-%E4%B8%8A%E4%B8%8B%E5%86%8C%E5%90%8450%E5%88%86%20-%20%E7%A9%BA%E7%99%BD%E5%8D%B7.doc",
-      "size": "822.0KB",
       "type": "5",
       "date": "2026-02-12"
     },
@@ -113,30 +71,9 @@
       "date": "2026-02-12"
     },
     {
-      "name": "2021年汽车构造线下试卷（下册）-A卷 - 含答案(1).docx",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98--%E8%B5%84%E6%96%99/%E7%AD%94%E6%A1%88/2021%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E7%BA%BF%E4%B8%8B%E8%AF%95%E5%8D%B7%EF%BC%88%E4%B8%8B%E5%86%8C%EF%BC%89-A%E5%8D%B7%20-%20%E5%90%AB%E7%AD%94%E6%A1%88%281%29.docx",
-      "size": "298.8KB",
-      "type": "5",
-      "date": "2026-02-12"
-    },
-    {
       "name": "2021年汽车构造线下试卷（下册）-A卷 - 含答案.docx",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98--%E8%B5%84%E6%96%99/%E5%8D%B7/2021%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E7%BA%BF%E4%B8%8B%E8%AF%95%E5%8D%B7%EF%BC%88%E4%B8%8B%E5%86%8C%EF%BC%89-A%E5%8D%B7%20-%20%E5%90%AB%E7%AD%94%E6%A1%88.docx",
       "size": "380.0KB",
-      "type": "5",
-      "date": "2026-02-12"
-    },
-    {
-      "name": "2021年汽车构造线下试卷（下册）-A卷 - 含答案.docx",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%8F%91%E5%8A%A8%E6%9C%BA--%E8%B5%84%E6%96%99/%E8%AF%95%E5%8D%B7%E5%8F%8A%E7%AD%94%E6%A1%88%281%29/2020-2021/A%E5%8D%B7/2021%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E7%BA%BF%E4%B8%8B%E8%AF%95%E5%8D%B7%EF%BC%88%E4%B8%8B%E5%86%8C%EF%BC%89-A%E5%8D%B7%20-%20%E5%90%AB%E7%AD%94%E6%A1%88.docx",
-      "size": "380.0KB",
-      "type": "5",
-      "date": "2026-02-12"
-    },
-    {
-      "name": "2022年汽车构造线上试卷（上下册）- 中文版 - A卷 - 空白卷.doc",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%8F%91%E5%8A%A8%E6%9C%BA--%E8%B5%84%E6%96%99/%E8%AF%95%E5%8D%B7%E5%8F%8A%E7%AD%94%E6%A1%88%281%29/2021-2022/A%E5%8D%B7/2022%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E7%BA%BF%E4%B8%8A%E8%AF%95%E5%8D%B7%EF%BC%88%E4%B8%8A%E4%B8%8B%E5%86%8C%EF%BC%89-%20%E4%B8%AD%E6%96%87%E7%89%88%20-%20A%E5%8D%B7%20-%20%E7%A9%BA%E7%99%BD%E5%8D%B7.doc",
-      "size": "1.2MB",
       "type": "5",
       "date": "2026-02-12"
     },
@@ -162,13 +99,6 @@
       "date": "2026-02-12"
     },
     {
-      "name": "2022年汽车构造线上试卷（上下册）- 中文版 - B卷 - 空白卷.doc",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%8F%91%E5%8A%A8%E6%9C%BA--%E8%B5%84%E6%96%99/%E8%AF%95%E5%8D%B7%E5%8F%8A%E7%AD%94%E6%A1%88%281%29/2021-2022/B%E5%8D%B7/2022%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E7%BA%BF%E4%B8%8A%E8%AF%95%E5%8D%B7%EF%BC%88%E4%B8%8A%E4%B8%8B%E5%86%8C%EF%BC%89-%20%E4%B8%AD%E6%96%87%E7%89%88%20-%20B%E5%8D%B7%20-%20%E7%A9%BA%E7%99%BD%E5%8D%B7.doc",
-      "size": "312.7KB",
-      "type": "5",
-      "date": "2026-02-12"
-    },
-    {
       "name": "2022年汽车构造线上试卷（上下册）- 中文版 - B卷 - 空白卷.pdf",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%8F%91%E5%8A%A8%E6%9C%BA--%E8%B5%84%E6%96%99/%E8%AF%95%E5%8D%B7%E5%8F%8A%E7%AD%94%E6%A1%88%281%29/2021-2022/B%E5%8D%B7/2022%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E7%BA%BF%E4%B8%8A%E8%AF%95%E5%8D%B7%EF%BC%88%E4%B8%8A%E4%B8%8B%E5%86%8C%EF%BC%89-%20%E4%B8%AD%E6%96%87%E7%89%88%20-%20B%E5%8D%B7%20-%20%E7%A9%BA%E7%99%BD%E5%8D%B7.pdf",
       "size": "242.6KB",
@@ -176,23 +106,9 @@
       "date": "2026-02-12"
     },
     {
-      "name": "2022年汽车构造线上试卷（上下册）- 中英文版 - A卷 - 空白卷(1).doc",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98--%E8%B5%84%E6%96%99/%E7%AD%94%E6%A1%88/2022%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E7%BA%BF%E4%B8%8A%E8%AF%95%E5%8D%B7%EF%BC%88%E4%B8%8A%E4%B8%8B%E5%86%8C%EF%BC%89-%20%E4%B8%AD%E8%8B%B1%E6%96%87%E7%89%88%20-%20A%E5%8D%B7%20-%20%E7%A9%BA%E7%99%BD%E5%8D%B7%281%29.doc",
-      "size": "154.5KB",
-      "type": "5",
-      "date": "2026-02-12"
-    },
-    {
       "name": "2022年汽车构造线上试卷（上下册）- 中英文版 - A卷 - 空白卷.doc",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98--%E8%B5%84%E6%96%99/%E5%8D%B7/2022%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E7%BA%BF%E4%B8%8A%E8%AF%95%E5%8D%B7%EF%BC%88%E4%B8%8A%E4%B8%8B%E5%86%8C%EF%BC%89-%20%E4%B8%AD%E8%8B%B1%E6%96%87%E7%89%88%20-%20A%E5%8D%B7%20-%20%E7%A9%BA%E7%99%BD%E5%8D%B7.doc",
       "size": "350.1KB",
-      "type": "5",
-      "date": "2026-02-12"
-    },
-    {
-      "name": "2022年汽车构造线上试卷（上下册）- 中英文版 - A卷 - 空白卷.doc",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%8F%91%E5%8A%A8%E6%9C%BA--%E8%B5%84%E6%96%99/%E8%AF%95%E5%8D%B7%E5%8F%8A%E7%AD%94%E6%A1%88%281%29/2021-2022/A%E5%8D%B7/2022%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E7%BA%BF%E4%B8%8A%E8%AF%95%E5%8D%B7%EF%BC%88%E4%B8%8A%E4%B8%8B%E5%86%8C%EF%BC%89-%20%E4%B8%AD%E8%8B%B1%E6%96%87%E7%89%88%20-%20A%E5%8D%B7%20-%20%E7%A9%BA%E7%99%BD%E5%8D%B7.doc",
-      "size": "1.2MB",
       "type": "5",
       "date": "2026-02-12"
     },
@@ -207,13 +123,6 @@
       "name": "2022年汽车构造线上试卷（上下册）- 中英文版 - B卷 - 空白卷.doc",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98--%E8%B5%84%E6%96%99/%E5%8D%B7/2022%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E7%BA%BF%E4%B8%8A%E8%AF%95%E5%8D%B7%EF%BC%88%E4%B8%8A%E4%B8%8B%E5%86%8C%EF%BC%89-%20%E4%B8%AD%E8%8B%B1%E6%96%87%E7%89%88%20-%20B%E5%8D%B7%20-%20%E7%A9%BA%E7%99%BD%E5%8D%B7.doc",
       "size": "132.7KB",
-      "type": "5",
-      "date": "2026-02-12"
-    },
-    {
-      "name": "2022年汽车构造线上试卷（上下册）- 中英文版 - B卷 - 空白卷.doc",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%8F%91%E5%8A%A8%E6%9C%BA--%E8%B5%84%E6%96%99/%E8%AF%95%E5%8D%B7%E5%8F%8A%E7%AD%94%E6%A1%88%281%29/2021-2022/B%E5%8D%B7/2022%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E7%BA%BF%E4%B8%8A%E8%AF%95%E5%8D%B7%EF%BC%88%E4%B8%8A%E4%B8%8B%E5%86%8C%EF%BC%89-%20%E4%B8%AD%E8%8B%B1%E6%96%87%E7%89%88%20-%20B%E5%8D%B7%20-%20%E7%A9%BA%E7%99%BD%E5%8D%B7.doc",
-      "size": "317.3KB",
       "type": "5",
       "date": "2026-02-12"
     },
@@ -242,20 +151,6 @@
       "name": "2022年汽车构造线上试卷（上册）- 中英文版 - A卷 - 含答案.pdf",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%8F%91%E5%8A%A8%E6%9C%BA--%E8%B5%84%E6%96%99/%E8%AF%95%E5%8D%B7%E5%8F%8A%E7%AD%94%E6%A1%88%281%29/2021-2022/A%E5%8D%B7/2022%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E7%BA%BF%E4%B8%8A%E8%AF%95%E5%8D%B7%EF%BC%88%E4%B8%8A%E5%86%8C%EF%BC%89-%20%E4%B8%AD%E8%8B%B1%E6%96%87%E7%89%88%20-%20A%E5%8D%B7%20-%20%E5%90%AB%E7%AD%94%E6%A1%88.pdf",
       "size": "677.9KB",
-      "type": "5",
-      "date": "2026-02-12"
-    },
-    {
-      "name": "2022年汽车构造线上试卷（下册） - B卷 - 中英文版 - 含答案(1).docx",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98--%E8%B5%84%E6%96%99/%E7%AD%94%E6%A1%88/2022%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E7%BA%BF%E4%B8%8A%E8%AF%95%E5%8D%B7%EF%BC%88%E4%B8%8B%E5%86%8C%EF%BC%89%20-%20B%E5%8D%B7%20-%20%E4%B8%AD%E8%8B%B1%E6%96%87%E7%89%88%20-%20%E5%90%AB%E7%AD%94%E6%A1%88%281%29.docx",
-      "size": "126.8KB",
-      "type": "5",
-      "date": "2026-02-12"
-    },
-    {
-      "name": "2022年汽车构造线上试卷（下册） - B卷 - 中英文版 - 含答案.docx",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%8F%91%E5%8A%A8%E6%9C%BA--%E8%B5%84%E6%96%99/%E8%AF%95%E5%8D%B7%E5%8F%8A%E7%AD%94%E6%A1%88%281%29/2021-2022/B%E5%8D%B7/2022%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E7%BA%BF%E4%B8%8A%E8%AF%95%E5%8D%B7%EF%BC%88%E4%B8%8B%E5%86%8C%EF%BC%89%20-%20B%E5%8D%B7%20-%20%E4%B8%AD%E8%8B%B1%E6%96%87%E7%89%88%20-%20%E5%90%AB%E7%AD%94%E6%A1%88.docx",
-      "size": "131.5KB",
       "type": "5",
       "date": "2026-02-12"
     },
@@ -302,7 +197,7 @@
       "date": "2026-02-14"
     },
     {
-      "name": "B2E8翻译 (2).docx",
+      "name": "B2E8翻译.docx",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/5/%E5%8F%82%E8%80%83/B2E8%E7%BF%BB%E8%AF%91%20%282%29.docx",
       "size": "12.2KB",
       "type": "4",
@@ -313,20 +208,6 @@
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98ppt/%E5%BA%95%E7%9B%98%E6%95%B4%E7%90%86/CH21%E8%BD%A6%E6%A1%A5%E5%92%8C%E8%BD%A6%E8%BD%AE.png",
       "size": "3.9MB",
       "type": "6",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chaper 1-Overall Structure.ppt",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chaper%201-Overall%20Structure.ppt",
-      "size": "5.3MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 1-Overall Structure.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/pdf/Chapter%201-Overall%20Structure.pdf",
-      "size": "6.4MB",
-      "type": "2",
       "date": "2026-02-14"
     },
     {
@@ -344,8 +225,50 @@
       "date": "2026-02-14"
     },
     {
+      "name": "CHAPTER 2.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/pdf/old/CHAPTER%202.pdf",
+      "size": "10.5MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "CHAPTER 2.pptx",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/CHAPTER%202.pptx",
+      "size": "29.0MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "CHAPTER 3.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/pdf/old/CHAPTER%203.pdf",
+      "size": "10.6MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "CHAPTER 3.pptx",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/CHAPTER%203.pptx",
+      "size": "25.1MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Chaper 1-Overall Structure.ppt",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chaper%201-Overall%20Structure.ppt",
+      "size": "5.3MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Chapter 1-Overall Structure.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/pdf/Chapter%201-Overall%20Structure.pdf",
+      "size": "6.4MB",
+      "type": "2",
+      "date": "2026-02-14"
+    },
+    {
       "name": "Chapter 10-Ignition System - HU - 2023.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/pdf/Chapter%2010-Ignition%20System%20-%20HU%20-%202023.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%2010-Ignition%20System%20-%20HU%20-%202023.pdf",
       "size": "2.8MB",
       "type": "2",
       "date": "2026-02-14"
@@ -354,13 +277,6 @@
       "name": "Chapter 10-Ignition System - HU - 2023.ppt",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%2010-Ignition%20System%20-%20HU%20-%202023.ppt",
       "size": "7.0MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 11- harmful emissions control system - HU - 2023.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/pdf/Chapter%2011-%20harmful%20emissions%20control%20system%20-%20HU%20-%202023.pdf",
-      "size": "2.9MB",
       "type": "2",
       "date": "2026-02-14"
     },
@@ -386,13 +302,6 @@
       "date": "2026-02-14"
     },
     {
-      "name": "Chapter 12－Advanced engine techology - Hu - 2023.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/pdf/Chapter%2012%EF%BC%8DAdvanced%20engine%20techology%20-%20Hu%20-%202023.pdf",
-      "size": "7.1MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
       "name": "Chapter 12－Advanced engine techology - Hu - 2023.ppt",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%2012%EF%BC%8DAdvanced%20engine%20techology%20-%20Hu%20-%202023.ppt",
       "size": "26.8MB",
@@ -407,30 +316,9 @@
       "date": "2026-02-14"
     },
     {
-      "name": "Chapter 13 - Drivetrain 2025.ppt",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98ppt/Chapter%2013%20-%20Drivetrain%202025.ppt",
-      "size": "6.6MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 14 - Clutch 2025.ppt",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98ppt/Chapter%2014%20-%20Clutch%202025.ppt",
-      "size": "25.8MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
       "name": "Chapter 14 - Clutch 2025.ppt",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/chassis/lectures/Chapter%2014%20-%20Clutch%202025.ppt",
       "size": "25.8MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 15 Transmission& Transfer Case 2025.ppt",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98ppt/Chapter%2015%20Transmission%26%20Transfer%20Case%202025.ppt",
-      "size": "17.6MB",
       "type": "2",
       "date": "2026-02-14"
     },
@@ -449,20 +337,6 @@
       "date": "2026-02-14"
     },
     {
-      "name": "Chapter 16 Automatic Transmission 2025.ppt",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98ppt/Chapter%2016%20Automatic%20Transmission%202025.ppt",
-      "size": "17.8MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 17  Universal Gearing 2023.ppt",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98ppt/Chapter%2017%20%20Universal%20Gearing%202023.ppt",
-      "size": "13.2MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
       "name": "Chapter 17  Universal Gearing 2023.ppt",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/chassis/lectures/Chapter%2017%20%20Universal%20Gearing%202023.ppt",
       "size": "13.2MB",
@@ -477,20 +351,6 @@
       "date": "2026-02-14"
     },
     {
-      "name": "Chapter 18 Drive  Axle 2025.ppt",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98ppt/Chapter%2018%20Drive%20%20Axle%202025.ppt",
-      "size": "17.6MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 19 Running Gear 2025.ppt",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98ppt/Chapter%2019%20Running%20Gear%202025.ppt",
-      "size": "4.8MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
       "name": "Chapter 19 Running Gear 2025.ppt",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/chassis/lectures/Chapter%2019%20Running%20Gear%202025.ppt",
       "size": "4.8MB",
@@ -498,37 +358,9 @@
       "date": "2026-02-14"
     },
     {
-      "name": "CHAPTER 2.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/pdf/old/CHAPTER%202.pdf",
-      "size": "10.5MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "CHAPTER 2.pptx",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/CHAPTER%202.pptx",
-      "size": "29.0MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 20 Frame & Uni Body 2025.ppt",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98ppt/Chapter%2020%20Frame%20%26%20Uni%20Body%202025.ppt",
-      "size": "7.4MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
       "name": "Chapter 20 Frame & Uni Body 2025.ppt",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/chassis/lectures/Chapter%2020%20Frame%20%26%20Uni%20Body%202025.ppt",
       "size": "7.4MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 21 Axle and Wheel 2025.ppt",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98ppt/Chapter%2021%20Axle%20and%20Wheel%202025.ppt",
-      "size": "23.2MB",
       "type": "2",
       "date": "2026-02-14"
     },
@@ -547,30 +379,9 @@
       "date": "2026-02-14"
     },
     {
-      "name": "Chapter 22 Suspension 2025.ppt",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98ppt/Chapter%2022%20Suspension%202025.ppt",
-      "size": "13.5MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 23 Steering System 2025.ppt",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98ppt/Chapter%2023%20Steering%20System%202025.ppt",
-      "size": "10.6MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
       "name": "Chapter 23 Steering System 2025.ppt",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/chassis/lectures/Chapter%2023%20Steering%20System%202025.ppt",
       "size": "10.6MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 24 Braking System 2025.ppt",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98ppt/Chapter%2024%20Braking%20System%202025.ppt",
-      "size": "29.3MB",
       "type": "2",
       "date": "2026-02-14"
     },
@@ -589,22 +400,8 @@
       "date": "2026-02-14"
     },
     {
-      "name": "Chapter 25 Body 2025.ppt",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98ppt/Chapter%2025%20Body%202025.ppt",
-      "size": "7.9MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
       "name": "Chapter 2－crank shaft and connecting rod.pdf",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%202%EF%BC%8Dcrank%20shaft%20and%20connecting%20rod.pdf",
-      "size": "4.9MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 2－crank shaft and connecting rod.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/pdf/Chapter%202%EF%BC%8Dcrank%20shaft%20and%20connecting%20rod.pdf",
       "size": "4.9MB",
       "type": "2",
       "date": "2026-02-14"
@@ -613,13 +410,6 @@
       "name": "Chapter 2－crank shaft and connecting rod.pptx",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/Chapter%202%EF%BC%8Dcrank%20shaft%20and%20connecting%20rod.pptx",
       "size": "5.4MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 3- Valve Train-2023.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/pdf/Chapter%203-%20Valve%20Train-2023.pdf",
-      "size": "4.7MB",
       "type": "2",
       "date": "2026-02-14"
     },
@@ -638,29 +428,8 @@
       "date": "2026-02-14"
     },
     {
-      "name": "CHAPTER 3.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/pdf/old/CHAPTER%203.pdf",
-      "size": "10.6MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "CHAPTER 3.pptx",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/CHAPTER%203.pptx",
-      "size": "25.1MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
       "name": "Chapter 4- Fule Supply System for Gasoline Engine.pdf",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-structure/engine/exams/Chapter%204-%20Fule%20Supply%20System%20for%20Gasoline%20Engine.pdf",
-      "size": "8.9MB",
-      "type": "2",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Chapter 4- Fule Supply System for Gasoline Engine.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E8%AF%BE%E4%BB%B6/pdf/Chapter%204-%20Fule%20Supply%20System%20for%20Gasoline%20Engine.pdf",
       "size": "8.9MB",
       "type": "2",
       "date": "2026-02-14"
@@ -764,24 +533,10 @@
       "date": "2026-02-14"
     },
     {
-      "name": "Nesthocker (3).docx",
+      "name": "Nesthocker.docx",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/5/%E5%8F%82%E8%80%83/Nesthocker%20%283%29.docx",
       "size": "11.0KB",
       "type": "6",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "~$22年汽车构造线上试卷（下册） - B卷 - 中英文版 - 含答案(1).docx",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98--%E8%B5%84%E6%96%99/%E7%AD%94%E6%A1%88/~%2422%E5%B9%B4%E6%B1%BD%E8%BD%A6%E6%9E%84%E9%80%A0%E7%BA%BF%E4%B8%8A%E8%AF%95%E5%8D%B7%EF%BC%88%E4%B8%8B%E5%86%8C%EF%BC%89%20-%20B%E5%8D%B7%20-%20%E4%B8%AD%E8%8B%B1%E6%96%87%E7%89%88%20-%20%E5%90%AB%E7%AD%94%E6%A1%88%281%29.docx",
-      "size": "162B",
-      "type": "5",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "~$战与未来趋势.docx",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/7/~%24%E6%88%98%E4%B8%8E%E6%9C%AA%E6%9D%A5%E8%B6%8B%E5%8A%BF.docx",
-      "size": "162B",
-      "type": "4",
       "date": "2026-02-14"
     },
     {
@@ -981,13 +736,6 @@
       "date": "2026-02-14"
     },
     {
-      "name": "底盘2023(1).docx",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98--%E8%B5%84%E6%96%99/%E7%AD%94%E6%A1%88/%E5%BA%95%E7%9B%982023%281%29.docx",
-      "size": "806.9KB",
-      "type": "5",
-      "date": "2026-02-14"
-    },
-    {
       "name": "底盘2023.docx",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%BA%95%E7%9B%98--%E8%B5%84%E6%96%99/%E5%8D%B7/%E5%BA%95%E7%9B%982023.docx",
       "size": "869.1KB",
@@ -1170,7 +918,7 @@
       "date": "2026-02-14"
     },
     {
-      "name": "碳达峰和碳中和对汽车工业的挑战和对策(5).pdf",
+      "name": "碳达峰和碳中和对汽车工业的挑战和对策.pdf",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/2/%E7%A2%B3%E8%BE%BE%E5%B3%B0%E5%92%8C%E7%A2%B3%E4%B8%AD%E5%92%8C%E5%AF%B9%E6%B1%BD%E8%BD%A6%E5%B7%A5%E4%B8%9A%E7%9A%84%E6%8C%91%E6%88%98%E5%92%8C%E5%AF%B9%E7%AD%96%285%29.pdf",
       "size": "2.1MB",
       "type": "4",
@@ -1268,7 +1016,7 @@
       "date": "2026-02-14"
     },
     {
-      "name": "试卷及答案(1).zip",
+      "name": "试卷及答案.zip",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/auto-struture/%E5%8F%91%E5%8A%A8%E6%9C%BA--%E8%B5%84%E6%96%99/%E8%AF%95%E5%8D%B7%E5%8F%8A%E7%AD%94%E6%A1%88%281%29.zip",
       "size": "15.0MB",
       "type": "5",

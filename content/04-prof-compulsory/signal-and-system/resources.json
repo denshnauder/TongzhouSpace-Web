@@ -316,6 +316,41 @@
       "date": "2026-02-14"
     },
     {
+      "name": "MATLAB编程练习题汇总（答案在程序目录都能找到）.docx",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/03-prof-basic/signal-and-system/zju-course-materials/homework-and-answers/exams/MATLAB%E7%BC%96%E7%A8%8B%E7%BB%83%E4%B9%A0%E9%A2%98%E6%B1%87%E6%80%BB%EF%BC%88%E7%AD%94%E6%A1%88%E5%9C%A8%E7%A8%8B%E5%BA%8F%E7%9B%AE%E5%BD%95%E9%83%BD%E8%83%BD%E6%89%BE%E5%88%B0%EF%BC%89.docx",
+      "size": "33.9KB",
+      "type": "6",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Oppenheim-Solutions Manual.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/signal-and-system/%E6%95%99%E6%9D%90/Oppenheim-Solutions%20Manual.pdf",
+      "size": "173.5MB",
+      "type": "1",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Oppenheim-信号与系统.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/signal-and-system/%E6%95%99%E6%9D%90/Oppenheim-%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F.pdf",
+      "size": "54.0MB",
+      "type": "1",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "Oppenheim-信号与系统辅导与题解.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/signal-and-system/%E6%95%99%E6%9D%90/Oppenheim-%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E8%BE%85%E5%AF%BC%E4%B8%8E%E9%A2%98%E8%A7%A3.pdf",
+      "size": "15.4MB",
+      "type": "1",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "PDF合并.pdf",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/signal-and-system/%E8%AF%95%E5%8D%B7/PDF%E5%90%88%E5%B9%B6.pdf",
+      "size": "2.6MB",
+      "type": "5",
+      "date": "2026-02-14"
+    },
+    {
       "name": "butterworthFilter.m",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/03-prof-basic/signal-and-system/zju-course-materials/signals-systems-matlab-examples/3-image-filtering/butterworthFilter.m",
       "size": "698B",
@@ -344,13 +379,6 @@
       "date": "2026-02-14"
     },
     {
-      "name": "conv_New.m",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/03-prof-basic/signal-and-system/zju-course-materials/signals-systems-matlab-examples/1-signal-convolution/conv_New.m",
-      "size": "214B",
-      "type": "6",
-      "date": "2026-02-14"
-    },
-    {
       "name": "convNew.m",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/03-prof-basic/signal-and-system/zju-course-materials/signals-systems-matlab-examples/7-fft-convolution/convNew.m",
       "size": "199B",
@@ -361,6 +389,13 @@
       "name": "convNew2.m",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/03-prof-basic/signal-and-system/zju-course-materials/signals-systems-matlab-examples/7-fft-convolution/convNew2.m",
       "size": "285B",
+      "type": "6",
+      "date": "2026-02-14"
+    },
+    {
+      "name": "conv_New.m",
+      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/03-prof-basic/signal-and-system/zju-course-materials/signals-systems-matlab-examples/1-signal-convolution/conv_New.m",
+      "size": "214B",
       "type": "6",
       "date": "2026-02-14"
     },
@@ -407,45 +442,10 @@
       "date": "2026-02-14"
     },
     {
-      "name": "MATLAB编程练习题汇总（答案在程序目录都能找到）.docx",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/03-prof-basic/signal-and-system/zju-course-materials/homework-and-answers/exams/MATLAB%E7%BC%96%E7%A8%8B%E7%BB%83%E4%B9%A0%E9%A2%98%E6%B1%87%E6%80%BB%EF%BC%88%E7%AD%94%E6%A1%88%E5%9C%A8%E7%A8%8B%E5%BA%8F%E7%9B%AE%E5%BD%95%E9%83%BD%E8%83%BD%E6%89%BE%E5%88%B0%EF%BC%89.docx",
-      "size": "33.9KB",
-      "type": "6",
-      "date": "2026-02-14"
-    },
-    {
       "name": "modulation.m",
       "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/03-prof-basic/signal-and-system/zju-course-materials/signals-systems-matlab-examples/5-audio-modulation/modulation.m",
       "size": "1.2KB",
       "type": "6",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Oppenheim-Solutions Manual.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/signal-and-system/%E6%95%99%E6%9D%90/Oppenheim-Solutions%20Manual.pdf",
-      "size": "173.5MB",
-      "type": "1",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Oppenheim-信号与系统.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/signal-and-system/%E6%95%99%E6%9D%90/Oppenheim-%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F.pdf",
-      "size": "54.0MB",
-      "type": "1",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "Oppenheim-信号与系统辅导与题解.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/signal-and-system/%E6%95%99%E6%9D%90/Oppenheim-%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E8%BE%85%E5%AF%BC%E4%B8%8E%E9%A2%98%E8%A7%A3.pdf",
-      "size": "15.4MB",
-      "type": "1",
-      "date": "2026-02-14"
-    },
-    {
-      "name": "PDF合并.pdf",
-      "url": "https://modelscope.cn/models/DenShnauder/Tongji-Res-Archive/resolve/master/04-prof-compulsory/signal-and-system/%E8%AF%95%E5%8D%B7/PDF%E5%90%88%E5%B9%B6.pdf",
-      "size": "2.6MB",
-      "type": "5",
       "date": "2026-02-14"
     },
     {
