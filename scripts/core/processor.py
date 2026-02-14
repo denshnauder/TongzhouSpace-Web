@@ -2,7 +2,8 @@ import os
 import shutil
 import re
 from pathlib import Path
-from scripts.config import INBOX_DIR, STAGING_DIR, TYPE_KEYWORDS, IGNORE_PATTERNS
+# 引入 CATEGORY_MAP 以便识别标准分类目录
+from scripts.config import INBOX_DIR, STAGING_DIR, TYPE_KEYWORDS, IGNORE_PATTERNS, CATEGORY_MAP
 from scripts.core.course_manager import CourseManager
 
 class Processor:
@@ -17,9 +18,7 @@ class Processor:
         return "6" # 其他
 
     def clean_filename(self, filename):
-        # 去除副本标记 (1), - Copy 等
         name = re.sub(r'\(\d+\)|（\d+）|\s-\s副本|\s-\sCopy', '', filename)
-        # 去除开头结尾空格
         return name.strip()
 
     def run(self):
@@ -36,16 +35,38 @@ class Processor:
             if any(re.search(p, f.name) for p in IGNORE_PATTERNS):
                 continue
             
-            # 1. 尝试匹配课程
-            # 优先用文件夹名匹配 (贡献者模式)，其次用文件名匹配
-            # 逻辑：_inbox/张三/高数/笔记.pdf -> 尝试用 "高数" 匹配
-            # 逻辑：_inbox/高数笔记.pdf -> 尝试用 "高数笔记" 匹配
+            # ================= 核心逻辑升级 =================
+            course_path = None
+            category_name = None
+            course_name = None
+
+            # 策略 A: 显式结构识别 (优先)
+            # 检查是否位于 _inbox/分类/课程/ 结构下
+            # f.parent = 课程文件夹, f.parent.parent = 分类文件夹
+            grandparent_name = f.parent.parent.name
+            if grandparent_name in CATEGORY_MAP:
+                # 命中！用户使用了标准的归档结构
+                category_name = grandparent_name
+                course_name = f.parent.name # 这是一个英文名 (e.g. concrete-structures)
+                
+                # 这种情况下，我们不需要去 content 里查是否存在，直接信任用户
+                # 这允许了 "新课程" 的自动创建
+                print(f"   🎯 识别到显式结构: {category_name} -> {course_name}")
             
-            # 简单起见，这里演示基于文件名的匹配
-            course_path = self.manager.find_course(f.name) or self.manager.find_course(f.parent.name)
+            else:
+                # 策略 B: 模糊匹配 (旧逻辑)
+                # 尝试通过文件夹名或文件名去 content 里查找已知课程
+                found_path = self.manager.find_course(f.name) or self.manager.find_course(f.parent.name)
+                if found_path:
+                    # found_path 是 absolute path (e.g., .../content/03-basic/fields)
+                    category_name = found_path.parent.name
+                    course_name = found_path.name
+
+            # ===============================================
             
-            if not course_path:
-                print(f"   ⚠️  无法识别课程，跳过: {f.name}")
+            if not category_name or not course_name:
+                # 为了调试方便，打印一下文件的父目录名
+                print(f"   ⚠️  无法识别课程 (父目录: {f.parent.name})，跳过: {f.name}")
                 continue
 
             # 2. 猜测类型
@@ -55,16 +76,13 @@ class Processor:
             new_name = self.clean_filename(f.name)
             
             # 4. 移动到 Staging
-            # 结构: _staging/course_relative_path/type_id/filename
-            # course_path 是绝对路径，需要转相对路径
-            rel_course_path = course_path.relative_to(course_path.parent.parent.parent / "content") # 略显麻烦，简化如下:
-            # 实际上 course_path.name 是 auto-structure, parent.name 是 04-xxx
-            staging_target = STAGING_DIR / course_path.parent.name / course_path.name / type_id
+            # 结构: _staging/CATEGORY/COURSE/TYPE/filename
+            staging_target = STAGING_DIR / category_name / course_name / type_id
             staging_target.mkdir(parents=True, exist_ok=True)
             
             target_file = staging_target / new_name
             shutil.move(str(f), str(target_file))
-            print(f"   ✅ 已移至 Staging: {course_path.name} / {new_name}")
+            print(f"   ✅ 已移至 Staging: {course_name} / {new_name}")
             count += 1
             
-        print(f"🎉 Stage 1 完成，共处理 {count} 个文件。请检查 _staging 目录。")
+        print(f"🎉 Stage 1 完成，共处理 {count} 个文件。")

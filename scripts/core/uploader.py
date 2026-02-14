@@ -3,9 +3,10 @@ import json
 import shutil
 from pathlib import Path
 from datetime import datetime
-# 假设你已经安装了 modelscope SDK
 from modelscope.hub.api import HubApi
-from scripts.config import STAGING_DIR, CONTENT_DIR, CATEGORY_MAP, FILE_TYPES
+# 引入 DIR_DISPLAY_MAP 以便自动生成中文标题
+# 如果你的 config.py 还没更新这个变量，这里会报错，所以请确保 config.py 是最新的
+from scripts.config import STAGING_DIR, CONTENT_DIR, FILE_TYPES, DIR_DISPLAY_MAP
 
 class Uploader:
     def __init__(self, token, repo_id):
@@ -29,9 +30,12 @@ class Uploader:
                 
                 # 对应的 content 目录
                 target_content_dir = CONTENT_DIR / cat_dir.name / course_dir.name
+                
+                # ================= 核心修改：自动创建目录 =================
                 if not target_content_dir.exists():
-                    print(f"   ❌ 目标课程目录不存在: {target_content_dir}")
-                    continue
+                    print(f"   ✨ 发现新课程，自动创建目录: {target_content_dir.name}")
+                    target_content_dir.mkdir(parents=True, exist_ok=True)
+                # =======================================================
 
                 json_path = target_content_dir / "resources.json"
                 # 读取现有的 resources.json
@@ -95,10 +99,14 @@ class Uploader:
     def render_index(self, course_dir, data):
         """重新生成 index.md"""
         index_file = course_dir / "index.md"
+        dir_name = course_dir.name.lower()
         
-        # 1. 获取课程标题 (保持原样)
-        title = course_dir.name
-        if index_file.exists():
+        # ================= 核心修改：优先查字典 =================
+        # 1. 优先查 Config 里的中文名
+        title = DIR_DISPLAY_MAP.get(dir_name)
+        
+        # 2. 查不到就尝试读旧文件 (兼容性)
+        if not title and index_file.exists():
             try:
                 with open(index_file, 'r', encoding='utf-8') as f:
                     for line in f:
@@ -106,6 +114,12 @@ class Uploader:
                             title = line.split(":", 1)[1].strip()
                             break
             except: pass
+        
+        # 3. 实在没有，只能用英文文件夹名，并打印警告
+        if not title:
+            title = course_dir.name
+            print(f"   ⚠️  警告: 新课程 {dir_name} 未在 config.py 中注册中文名！")
+        # ======================================================
         
         # 2. 准备 Markdown 内容
         md_content = f"---\ntitle: {title}\n---\n\n"
@@ -132,7 +146,7 @@ class Uploader:
                 elif fname.endswith('zip'): icon = "📦"
                 elif fname.endswith('ppt') or fname.endswith('pptx'): icon = "📺"
                 
-                md_content += f"- {icon} **{item['name']}** <small>({item.get('size','')})</small> [☁️ 点击下载]({item['url']})\n"
+                md_content += f"- {icon} [{item['name']}]({item['url']}) <small style='opacity:0.6'>({item.get('size','-')})</small>\n"
         
         # 5. 写入文件
         with open(index_file, 'w', encoding='utf-8') as f:
