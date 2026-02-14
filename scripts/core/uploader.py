@@ -56,10 +56,10 @@ class Uploader:
                             self.api.upload_file(
                                 repo_id=self.repo_id,
                                 path_or_fileobj=str(f),
-                                path_in_repo=f.name, # 简单起见放在根目录，或者你可以按结构放
+                                path_in_repo=f.name, # 简单起见放在根目录
                                 revision='master'
                             )
-                            # 生成 URL (假设是公开仓库)
+                            # 生成 URL
                             url = f"https://modelscope.cn/models/{self.repo_id}/resolve/master/{f.name}"
                             
                             # 2. 更新 Metadata
@@ -70,11 +70,11 @@ class Uploader:
                                 "type": type_id,
                                 "date": datetime.now().strftime("%Y-%m-%d")
                             }
+                            # 检查去重 (可选)
                             resources['files'].append(new_entry)
                             updated = True
                             
-                            # 3. 移动文件到 content (可选，作为本地备份) 或直接删除
-                            # 这里选择删除 Staging 文件，保持干净
+                            # 3. 删除 Staging 文件
                             f.unlink()
                             
                         except Exception as e:
@@ -82,12 +82,58 @@ class Uploader:
 
                 # 4. 如果有更新，保存 JSON 并刷新 Index
                 if updated:
+                    # 去重逻辑 (简单按 URL 去重)
+                    unique_files = {v['url']: v for v in resources['files']}.values()
+                    resources['files'] = list(unique_files)
+                    
                     with open(json_path, 'w', encoding='utf-8') as f:
                         json.dump(resources, f, indent=2, ensure_ascii=False)
+                    
                     self.render_index(target_content_dir, resources)
                     print(f"   📝 已更新索引: {course_dir.name}")
 
     def render_index(self, course_dir, data):
-        # 简单的 Index 渲染逻辑，你可以复用之前 batch_clean_all 的逻辑
-        # 这里仅作示意
-        pass # 请将之前的 render_index_md 函数逻辑放这里
+        """重新生成 index.md"""
+        index_file = course_dir / "index.md"
+        
+        # 1. 获取课程标题 (保持原样)
+        title = course_dir.name
+        if index_file.exists():
+            try:
+                with open(index_file, 'r', encoding='utf-8') as f:
+                    for line in f:
+                        if line.startswith("title:"):
+                            title = line.split(":", 1)[1].strip()
+                            break
+            except: pass
+        
+        # 2. 准备 Markdown 内容
+        md_content = f"---\ntitle: {title}\n---\n\n"
+        
+        # 3. 分组与排序
+        grouped = {}
+        for f in data.get('files', []):
+            t = str(f.get('type', '6'))
+            if t not in grouped: grouped[t] = []
+            grouped[t].append(f)
+            
+        # 4. 生成列表
+        for t_key in sorted(grouped.keys()):
+            t_name = FILE_TYPES.get(t_key, "其他")
+            md_content += f"## {t_name}\n"
+            
+            # 简单的文件名排序
+            items = sorted(grouped[t_key], key=lambda x: x['name'])
+            
+            for item in items:
+                icon = "📄"
+                fname = item['name'].lower()
+                if fname.endswith('pdf'): icon = "📕"
+                elif fname.endswith('zip'): icon = "📦"
+                elif fname.endswith('ppt') or fname.endswith('pptx'): icon = "📺"
+                
+                md_content += f"- {icon} **{item['name']}** <small>({item.get('size','')})</small> [☁️ 点击下载]({item['url']})\n"
+        
+        # 5. 写入文件
+        with open(index_file, 'w', encoding='utf-8') as f:
+            f.write(md_content)
