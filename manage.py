@@ -33,11 +33,11 @@ def main():
         u = Uploader(token, repo_id)
         u.run()
         
-        # 自动 Git Push (可选)
-        print("☁️  正在推送到 GitHub...")
-        os.system("git add content/")
-        os.system("git commit -m 'Auto-update resources'")
-        os.system("git push")
+        # 移除自动 Git Push
+        print("\n✅ 上传完成！请记得手动提交代码：")
+        print("   git add .")
+        print("   git commit -m 'feat: update resources'")
+        print("   git push")
 
     else:
         print("未知命令。")
