@@ -35,7 +35,7 @@
     "quartz": "./quartz/bootstrap-cli.mjs"
   },
   "dependencies": {
-    "@clack/prompts": "^1.0.0",
+    "@clack/prompts": "^1.0.1",
     "@floating-ui/dom": "^1.7.5",
     "@myriaddreamin/rehype-typst": "^0.6.0",
     "@napi-rs/simple-git": "0.1.22",
@@ -49,7 +49,7 @@
     "esbuild-sass-plugin": "^3.6.0",
     "flexsearch": "^0.8.212",
     "github-slugger": "^2.0.0",
-    "globby": "^16.1.0",
+    "globby": "^16.1.1",
     "gray-matter": "^4.0.3",
     "hast-util-to-html": "^9.0.5",
     "hast-util-to-jsx-runtime": "^2.3.6",
@@ -61,7 +61,7 @@
     "mdast-util-to-hast": "^13.2.1",
     "mdast-util-to-string": "^4.0.0",
     "micromorph": "^0.4.5",
-    "minimatch": "^10.1.2",
+    "minimatch": "^10.2.1",
     "pixi.js": "^8.16.0",
     "preact": "^10.28.3",
     "preact-render-to-string": "^6.6.5",
